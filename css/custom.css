@@ -1,0 +1,210 @@
+/*
+  custom.css
+  This stylesheet defines a unified colour palette for the NanoSchool site and
+  overrides some default Tailwind utility classes. By centralising colours as
+  CSS variables, we can easily maintain a consistent look across light and
+  dark modes while still relying on the power of Tailwind for layout.
+
+  Light mode variables define soft backgrounds, subtle text colours and
+  vibrant brand colours. Dark mode overrides provide analogous values on a
+  darker backdrop. Additional overrides target common Tailwind classes used
+  throughout the site (e.g. .bg-gray-50, .text-blue-600) so that cards,
+  icons and borders automatically adopt the new palette without modifying
+  every element individually. If you need a new colour, declare it here
+  first and then reference it via var(--your-colour-name).
+*/
+
+:root {
+  /* Base background and card colours for light mode */
+  --bg-light: #f7faff; /* very light blue inspired by NanoSchool's clean aesthetic */
+  --card-bg: #ffffff;
+  --text-primary: #14213d; /* deep navy for primary text */
+  --text-secondary: #354764; /* muted blue-grey for secondary text */
+  --border-color: #dce3f0;
+  /* Brand palette inspired by nanoschool.in */
+  --brand-primary: #0047ab; /* rich royal blue from NanoSchool call‑to‑action buttons */
+  --brand-secondary: #6a5acd; /* periwinkle/purple accent */
+  --brand-accent: #00a693; /* teal accent used in infographics */
+  --brand-yellow: #f0b429; /* warm amber accent */
+  /* Hover state for primary buttons (slightly darker than the primary colour) */
+  --brand-primary-hover: #003d8e;
+
+  /* Skeleton placeholder colours
+     We customise the colours of loading skeletons to better align with the
+     NanoSchool brand palette.  The background and line colours use very
+     light tints of our brand colours rather than plain grey.  These
+     variables are referenced in the skeleton-card and skeleton-line
+     selectors below. */
+  --skeleton-bg: #e6eefb; /* very pale blue derived from brand primary */
+  --skeleton-line-bg: #d7e5fa; /* slightly darker tint for skeleton lines */
+}
+
+/* Dark mode overrides; these values will take effect when the `dark` class
+   is present on the html element. Dark backgrounds are paired with lighter
+   text colours, while brand colours remain saturated but slightly lighter
+   to aid readability. */
+html.dark {
+  --bg-light: #051b42; /* dark navy background echoing NanoSchool hero */
+  --card-bg: #0c2a63; /* slightly lighter card for dark mode */
+  --text-primary: #e2e8f0; /* off‑white text on dark */
+  --text-secondary: #9aa7c2;
+  --border-color: #1e3a68;
+  --brand-primary: #3b82f6; /* softened royal blue for dark mode */
+  --brand-secondary: #8b5cf6; /* pastel periwinkle */
+  --brand-accent: #2dd4bf; /* mint teal */
+  --brand-yellow: #fde047; /* light gold */
+  /* Hover state for primary buttons in dark mode */
+  --brand-primary-hover: #274bb8;
+
+  /* Skeleton colours for dark mode.  These values are darker tints of
+     the brand palette to ensure sufficient contrast on dark backgrounds
+     without being too bright. */
+  --skeleton-bg: #102b54; /* deep navy tint for skeleton cards */
+  --skeleton-line-bg: #183872; /* slightly lighter tint for skeleton lines */
+}
+
+/* Micro‑interaction for course cards across all pages.  By abstracting the hover effects
+   into a reusable class, we can ensure consistent behaviour on index, listing,
+   track and domain pages without repeating inline styles in the HTML or JS. */
+.course-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Override common Tailwind background classes */
+.bg-gray-50 {
+  background-color: var(--bg-light) !important;
+}
+.bg-white {
+  background-color: var(--card-bg) !important;
+}
+.bg-blue-50 {
+  background-color: rgba(14, 165, 233, 0.1) !important;
+}
+
+/* Override text colours */
+.text-gray-700 {
+  color: var(--text-secondary) !important;
+}
+.text-gray-900 {
+  color: var(--text-primary) !important;
+}
+.text-blue-900 {
+  color: var(--brand-primary) !important;
+}
+.text-blue-800 {
+  color: var(--brand-primary) !important;
+}
+.text-blue-700 {
+  color: var(--brand-primary) !important;
+}
+.text-blue-600 {
+  color: var(--brand-primary) !important;
+}
+.text-purple-600 {
+  color: var(--brand-secondary) !important;
+}
+.text-green-600 {
+  color: var(--brand-accent) !important;
+}
+.text-yellow-600 {
+  color: var(--brand-yellow) !important;
+}
+
+/* Border colours */
+.border {
+  border-color: var(--border-color) !important;
+}
+.border-gray-200 {
+  border-color: var(--border-color) !important;
+}
+.border-gray-300 {
+  border-color: var(--border-color) !important;
+}
+
+/* Buttons and interactive elements: emphasise brand colours */
+.hover\:bg-blue-50:hover {
+  background-color: rgba(14, 165, 233, 0.1) !important;
+}
+.hover\:bg-white:hover {
+  background-color: var(--card-bg) !important;
+}
+.hover\:text-blue-800:hover {
+  color: var(--brand-primary) !important;
+}
+.hover\:text-white:hover {
+  color: var(--card-bg) !important;
+}
+/* Use our palette for progress bars or rating components via inline style */
+/* Override Tailwind utility classes for blue backgrounds and borders to ensure
+   consistency with our NanoSchool-inspired palette. Without these overrides,
+   default Tailwind blues may clash with the new theme. */
+.bg-blue-600, .bg-blue-700, .bg-blue-800 {
+  background-color: var(--brand-primary) !important;
+}
+.hover\:bg-blue-600:hover, .hover\:bg-blue-700:hover, .hover\:bg-blue-800:hover {
+  background-color: var(--brand-primary-hover) !important;
+}
+.border-blue-600, .border-blue-700, .border-blue-800 {
+  border-color: var(--brand-primary) !important;
+}
+
+/*
+  Skeleton loading placeholders
+  Use these classes to show shimmering cards while dynamic data is loaded.
+  The pulse animation fades the element opacity to simulate loading. Colours
+  adjust automatically for dark mode using the .dark selector. These classes
+  are used in index.js and listing.js when displaying loading skeletons for
+  categories, featured courses and course cards.
+*/
+/* Skeleton card styling
+   The skeleton-card and skeleton-line classes display shimmering placeholders
+   while dynamic data loads.  Colours are derived from CSS variables so
+   that they harmonise with the brand palette. */
+.skeleton-card {
+  animation: pulse 1.5s ease-in-out infinite;
+  background-color: var(--skeleton-bg);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Dark mode inherits skeleton colours from the variables declared in html.dark */
+.dark .skeleton-card {
+  background-color: var(--skeleton-bg);
+}
+
+.skeleton-line {
+  height: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: var(--skeleton-line-bg);
+}
+
+.dark .skeleton-line {
+  background-color: var(--skeleton-line-bg);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Fade-in animation for content
+   The fade-in class causes elements to appear smoothly with a slight slide
+   upward when they are inserted into the DOM.  Applying this class to
+   dynamically loaded cards helps transition from skeletons to content. */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

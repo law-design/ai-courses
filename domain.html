@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domain Overview | NanoSchool</title>
+  <meta name="description" content="Discover courses by domain at NanoSchool. Learn about tools and skills related to each domain and explore relevant courses." />
+  <!-- Add a data-base attribute so dynamic JS can append domain keywords without overwriting the base list -->
+  <meta name="keywords" data-base="NanoSchool domains, AI domains, Machine Learning domain, Quantum AI domain" content="NanoSchool domains, AI domains, Machine Learning domain, Quantum AI domain" />
+  <link rel="canonical" href="https://nanoschool.in/ai/courses/domain" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Domain Overview | NanoSchool" />
+  <meta property="og:description" content="Browse AI and science domains at NanoSchool and find courses and tools for each domain." />
+  <meta property="og:url" content="https://nanoschool.in/ai/courses/domain" />
+  <meta property="og:image" content="https://nanoschool.in/images/ai-courses-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Domain Overview | NanoSchool" />
+  <meta name="twitter:description" content="Explore domains and courses in AI, ML, Quantum and Data Science at NanoSchool." />
+  <meta name="twitter:image" content="https://nanoschool.in/images/ai-courses-og.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NanoSchool AI",
+    "url": "https://nanoschool.in/ai/courses/domain"
+  }
+  </script>
+
+  <!-- Structured data: breadcrumb for navigation and FAQ entries for the About This Domain section. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://nanoschool.in/ai/courses/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Domains",
+        "item": "https://nanoschool.in/ai/courses/domain"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is this domain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A domain categorises courses by their area of application. This could be data science, healthcare, finance or another vertical where AI techniques are applied. Each domain page introduces the field and its significance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which tools and technologies are used in this domain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Domains utilise a range of tools and frameworks—from programming languages like Python and R to libraries such as TensorFlow, PyTorch and scikit‑learn. The tool list on this page shows which technologies appear across the courses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are typical applications in this domain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI applications vary by domain. In healthcare, AI assists with diagnostics and patient monitoring; in finance, it detects fraud and optimises trading strategies; in retail, it powers recommendation engines; and in education, it personalises learning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What career roles and learning paths are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Careers include data analyst, domain‑specific data scientist, AI consultant and product manager. Each role requires knowledge of the tools and applications relevant to that domain; this page links to courses and learning paths to build those skills."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What trends and future skills should I know?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Emerging trends include domain‑specific generative AI, real‑time analytics on edge devices, regulations around AI ethics and privacy, and advances in explainable AI. Staying informed helps ensure your skills remain relevant."
+        }
+      }
+    ]
+  }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-........." crossorigin="anonymous" />
+  <!-- Custom palette overrides -->
+  <link rel="stylesheet" href="css/custom.css" />
+  <script src="https://nanoschool.in/courses-data/new/data/courses.js"></script>
+  <script defer src="https://nanoschool.in/courses-data/new/js/domain.js"></script>
+  <script defer src="https://nanoschool.in/courses-data/new/js/theme.js"></script>
+  <!-- Scroll to top functionality -->
+  <script defer src="https://nanoschool.in/courses-data/new/js/scroll.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Global navigation bar -->
+  <nav class="bg-white dark:bg-gray-900 shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="https://nanoschool.in/ai/" class="text-2xl font-bold text-blue-600 dark:text-blue-300">NanoSchool</a>
+      <button id="navToggle" class="md:hidden text-gray-700 dark:text-gray-200 focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="navMenu" class="hidden md:flex space-x-6 items-center">
+        <a href="https://nanoschool.in/ai/" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Home</a>
+        <a href="https://nanoschool.in/ai/courses/listing" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Courses</a>
+        <a href="https://nanoschool.in/ai/courses/track" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Tracks</a>
+        <a href="https://nanoschool.in/ai/courses/domain" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Domains</a>
+        <a href="https://nanoschool.in/ai" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">About</a>
+        <button aria-label="Toggle dark mode" class="theme-toggle text-gray-700 dark:text-gray-200 text-xl">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 px-4 pb-4 space-y-3">
+      <a href="https://nanoschool.in/ai/" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Home</a>
+      <a href="https://nanoschool.in/ai/courses/listing" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Courses</a>
+      <a href="https://nanoschool.in/ai/courses/track" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Tracks</a>
+      <a href="https://nanoschool.in/ai/courses/domain" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Domains</a>
+      <a href="https://nanoschool.in/ai#deepDive" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">About</a>
+      <button aria-label="Toggle dark mode" class="theme-toggle flex items-center text-gray-700 dark:text-gray-200">
+        <i class="fas fa-moon mr-2"></i> <span>Toggle Theme</span>
+      </button>
+    </div>
+  </nav>
+  <!-- Spacer to offset fixed nav height -->
+  <div class="h-16"></div>
+  <!-- Table of contents for domain page -->
+  <aside id="toc" class="hidden md:block fixed top-32 right-4 w-56 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border dark:border-gray-700 rounded-lg p-4 shadow-md z-20">
+    <h3 class="font-semibold mb-3 text-blue-900 dark:text-blue-200">On this page</h3>
+    <ul class="space-y-2 text-sm">
+      <li><a href="#aboutDomain" class="hover:underline">About Domain</a></li>
+      <li><a href="#toolsSection" class="hover:underline">Tools</a></li>
+      <li><a href="#coursesSection" class="hover:underline">Courses</a></li>
+    </ul>
+  </aside>
+  <!-- Hero header with gradient and dark mode toggle -->
+  <header class="relative overflow-hidden text-white py-12 flex justify-between items-center px-4" style="background: linear-gradient(to right, var(--brand-primary), var(--brand-accent));">
+    <div>
+      <h1 id="domainName" class="text-4xl md:text-5xl font-bold mb-2">Domain</h1>
+      <p id="domainDescription" class="text-md md:text-lg opacity-90 max-w-xl"></p>
+    </div>
+    <!-- Dark mode toggle moved to global navigation; placeholder retained for layout -->
+    <div></div>
+    <div class="absolute inset-0">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <style>
+      .blob { position:absolute; border-radius:50%; filter:blur(80px); opacity:0.4; }
+      /* Update blob colours to the new NanoSchool palette. */
+      .blob-1 { width:320px; height:320px; background:radial-gradient(circle, rgba(0,71,171,0.4), transparent 70%); top:-80px; left:-80px; animation:drift 25s infinite ease-in-out; }
+      .blob-2 { width:280px; height:280px; background:radial-gradient(circle, rgba(106,90,205,0.4), transparent 70%); bottom:-60px; right:-60px; animation:pulse 22s infinite alternate; }
+      @keyframes drift { 0%,100% { transform:translate(0,0); } 50% { transform:translate(20px,15px); } }
+      @keyframes pulse { 0% { transform:scale(1); opacity:0.3; } 100% { transform:scale(1.1); opacity:0.6; } }
+    </style>
+  </header>
+  <!--
+    The domain page includes a fixed TOC on the right side when viewed on
+    medium and larger screens. To prevent the TOC from covering the
+    "About Domain", "Tools" and "Courses" sections, apply a right margin
+    that is larger than the sidebar width (14rem). The md:mr-64 class
+    moves the content left and preserves the layout’s integrity.
+  -->
+  <main class="container mx-auto px-4 py-6 space-y-6 md:mr-64">
+    <!-- About Domain Section -->
+    <section id="aboutDomain" class="space-y-6">
+      <h2 class="text-2xl font-semibold mb-2">About This Domain</h2>
+      <p class="text-gray-700 text-sm">Domains at NanoSchool group courses by their subject area or industry application. Whether you’re exploring data science, computer vision, robotics, quantum computing or another cutting‑edge field, a domain defines the context in which AI techniques are applied. This section offers an in‑depth look at what domains are, the tools you’ll use, where these skills are needed in the real world and how to develop your expertise.</p>
+      <div class="space-y-4">
+        <!-- What is this domain accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>What is this domain?</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>A domain focuses on a specific subject area where AI methods are applied. For example, in the healthcare domain you may study how AI helps diagnose diseases and personalise treatments; in the finance domain you might build fraud detection models and trading algorithms; in robotics you learn to control and navigate physical systems; and in quantum computing you explore how quantum mechanics can accelerate AI tasks. Understanding the domain’s unique challenges helps you choose appropriate models, interpret results and innovate responsibly. As you progress, you’ll learn to differentiate between classical AI approaches that classify and predict based on existing data and generative AI models that create new outputs from patterns【243297118662396†L3348-L3364】.</p>
+          </div>
+        </details>
+        <!-- Tools & technologies accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>Tools &amp; technologies</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>Successful projects require the right tools. In most domains you’ll work with programming languages like Python and R, and frameworks such as TensorFlow, PyTorch and Scikit‑learn for machine learning; Pandas and NumPy for data manipulation; Jupyter notebooks for interactive exploration; and libraries like OpenCV for computer vision or spaCy for natural language processing. Quantum AI domains introduce toolkits like Qiskit and Cirq, while robotics uses ROS (Robot Operating System) and simulation environments like Gazebo. Cloud platforms (AWS, Google Cloud, Azure) provide scalable computing resources, and MLOps tools like MLflow and Kubeflow help manage experiments and deployments. Understanding the capabilities and trade‑offs of these tools will enable you to build efficient, reliable solutions.</p>
+          </div>
+        </details>
+        <!-- Industry applications accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>Industry applications</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>AI is transforming every industry. Everyday examples include digital assistants that answer questions, chatbots that manage customer support, search engines that deliver personalised results, writing tools that generate drafts and correct grammar, smart devices that automate our homes and offices, and e‑commerce platforms that recommend products【243297118662396†L3376-L3424】. In healthcare, AI assists with image analysis, drug discovery and patient monitoring; in finance, it drives credit scoring, fraud detection and algorithmic trading; in retail, it powers demand forecasting and inventory optimisation; in travel, it optimises routes and pricing. Understanding these applications helps you see the bigger picture and motivates your learning journey.</p>
+          </div>
+        </details>
+        <!-- Career roles & learning path accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>Career roles &amp; learning path</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>Pursuing a domain equips you for specialised roles such as machine‑learning engineer, data scientist, AI product manager, domain expert, generative AI specialist and AI ethics consultant【243297118662396†L3472-L3487】. Industries like technology, healthcare, finance, retail, automotive and energy are actively hiring professionals with domain‑specific expertise【243297118662396†L3495-L3516】. To build your career, begin by mastering a programming language and mathematical foundations, then delve into domain‑specific models and use cases. Work on projects, contribute to open‑source initiatives, and seek mentorship from industry professionals or educators. NanoSchool’s structured courses, workshops and labs provide hands‑on practice, enabling you to build a portfolio that demonstrates your skills to employers.</p>
+          </div>
+        </details>
+        <!-- Trends & future skills accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>Trends &amp; future skills</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>AI advances rapidly, so it’s important to monitor emerging trends. Multimodal AI integrates text, audio, images and video to enable richer interactions, while agentic AI pushes towards autonomous agents that make decisions and act in complex environments【243297118662396†L3430-L3469】. Edge computing and AIoT bring AI capabilities closer to where data is generated, enabling low‑latency processing and reduced bandwidth requirements. Generative AI continues to revolutionise content creation and design, and explainable AI aims to make models’ decisions transparent. Other important themes include sustainability (energy‑efficient algorithms and hardware), AIOps (AI for IT operations) and the ethical considerations of deploying AI responsibly. By staying informed, you’ll be prepared to adapt as the field evolves.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+    <!-- Tools -->
+    <section id="toolsSection" class="space-y-4">
+      <h2 class="text-2xl font-semibold mb-2">Tools in this Domain</h2>
+      <p class="text-gray-600 text-sm">Explore the software and platforms commonly used in this domain. These tools power the courses and projects you’ll build.</p>
+      <!-- Centre the tools grid horizontally using mx-auto so rows with fewer than the maximum number of columns do not hug the left side -->
+      <!-- Use inline-grid to centre the tools grid horizontally and allow rows with fewer items to be centred -->
+      <div id="toolList" class="grid inline-grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center mx-auto"></div>
+    </section>
+    <!-- Courses -->
+    <section id="coursesSection" class="space-y-4">
+      <h2 class="text-2xl font-semibold mb-2">Courses in this Domain</h2>
+      <p class="text-gray-600 text-sm">Discover curated courses that focus on this domain’s key topics and applications. Filter by your desired tools and skill levels.</p>
+      <!-- Centre the courses grid horizontally using mx-auto so rows align symmetrically -->
+      <!-- Use inline-grid to centre the courses grid horizontally when there are few courses. -->
+      <div id="courseList" class="grid inline-grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center mx-auto"></div>
+    </section>
+  </main>
+  <footer class="bg-blue-900 dark:bg-gray-900 text-white mt-16">
+    <div class="container mx-auto px-4 py-10 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+      <div>
+        <h4 class="font-bold text-lg mb-2">NanoSchool</h4>
+        <p class="text-sm">Leading AI, quantum and deep science education since 2008.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Quick Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="https://nanoschool.in/ai/courses/" class="hover:underline">Home</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/listing" class="hover:underline">Courses</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/track" class="hover:underline">Tracks</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/domain" class="hover:underline">Domains</a></li>
+          <li><a href="https://nanoschool.in/ai" class="hover:underline">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Contact</h4>
+        <p class="text-sm">123 Science Avenue<br>Gurugram, Haryana, India</p>
+        <p class="text-sm mt-2">Email: <a href="mailto:contact@nanoschool.in" class="underline">contact@nanoschool.in</a></p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Follow Us</h4>
+        <div class="flex space-x-4 text-xl">
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-blue-800 dark:border-gray-800 mt-6">
+      <p class="text-center text-sm py-4">&copy; <span id="footerYear"></span> NanoSchool. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearSpan = document.getElementById('footerYear');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+
+  <style>
+    /* Dark mode overrides */
+    html.dark body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+    }
+    html.dark .bg-white {
+      background-color: #1e293b;
+    }
+    html.dark .bg-gray-50 {
+      background-color: #0f172a;
+    }
+    html.dark .text-gray-800 {
+      color: #f1f5f9;
+    }
+    html.dark .text-gray-700 {
+      color: #cbd5e1;
+    }
+    html.dark .text-gray-600 {
+      color: #94a3b8;
+    }
+    html.dark header {
+      background-color: #1e293b;
+    }
+    html.dark footer {
+      background-color: #1e293b;
+    }
+    html.dark .border {
+      border-color: #374151;
+    }
+    html.dark #toc {
+      background-color: #1e293b;
+      color: #cbd5e1;
+    }
+    html.dark .hover\:bg-blue-50:hover {
+      background-color: #334155;
+    }
+    html.dark .bg-blue-900 {
+      background-color: #1e3a8a;
+    }
+    html.dark .text-blue-900 {
+      color: #60a5fa;
+    }
+
+    /* Accordion icon rotation */
+    details summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    details summary .fa-chevron-down {
+      transition: transform 0.3s ease;
+    }
+    details[open] summary .fa-chevron-down {
+      transform: rotate(180deg);
+    }
+  </style>
+  <!-- Scroll to top button (hidden by default).  It appears when the user scrolls down
+       and uses our brand palette.  Placing this here ensures it renders after
+       the main content without interfering with layout. -->
+  <button id="scrollTopBtn" class="hidden fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-md transition z-50" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <!-- Include responsive navigation JS -->
+  <script defer src="https://nanoschool.in/courses-data/new/js/navigation.js"></script>
+</body>
+</html>

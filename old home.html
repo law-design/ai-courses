@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transform Your Career with AI | NanoSchool by NSTC (17‑Year Deep Science EdTech)</title>
+  <meta name="description" content="Join NanoSchool by NSTC — a 17‑year‑old deep science learning edtech in India. Discover the nation's best Industrial AI training, workshops, tracks, domains and mentors. Transform your career with AI today at India's most trusted deep science academy." />
+  <meta name="keywords" content="AI training, industrial AI, AI workshops, AI courses, AI mentors, AI education, deep science learning edtech, NSTC, NanoSchool, 17 year, India" />
+  <link rel="canonical" href="https://nanoschool.in/ai" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Transform Your Career with AI | NanoSchool by NSTC (17‑Year Deep Science EdTech)" />
+  <meta property="og:description" content="Discover world‑class AI programs, workshops and mentors at NanoSchool — the AI arm of NSTC, India's 17‑year‑old deep science edtech. Unlock your potential with industrial AI tracks, courses, workshops, mentors and more." />
+  <meta property="og:url" content="https://nanoschool.in/ai" />
+  <meta property="og:image" content="https://nanoschool.in/images/ai-courses-og.png" />
+  <meta property="og:site_name" content="NanoSchool" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Transform Your Career with AI | NanoSchool by NSTC (17‑Year Deep Science EdTech)" />
+  <meta name="twitter:description" content="Join NanoSchool, powered by NSTC — a 17‑year‑old deep science learning edtech in India. Unlock your AI potential with industrial AI tracks, workshops, mentors and more." />
+  <meta name="twitter:image" content="https://nanoschool.in/images/ai-courses-og.png" />
+  <!-- Geo tags for local SEO -->
+  <meta name="geo.region" content="IN-DL" />
+  <meta name="geo.placename" content="New Delhi, India" />
+  <meta name="geo.position" content="28.6139;77.2090" />
+  <meta name="ICBM" content="28.6139,77.2090" />
+  <!-- Structured data for SEO, Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NanoSchool AI",
+    "url": "https://nanoschool.in",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://nanoschool.in/ai/courses?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NanoSchool",
+    "url": "https://nanoschool.in",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nanoschool.in/images/ai-courses-og.png"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-9876543210",
+      "contactType": "customer support",
+      "areaServed": "IN"
+    }
+  }
+  </script>
+  <!-- TailwindCSS & Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --radius: 1rem; /* 16px */
+      --shadow: 0 10px 30px -10px rgba(14,34,74,.15);
+      --bg: #f8fafc; /* slate-50 */
+      --text: #0f172a; /* slate-900 */
+      --muted: #64748b; /* slate-500 */
+      --primary: #1e40af; /* blue-800 */
+      --primary-light: #3b82f6; /* blue-500 */
+    }
+    /* Global noise overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: -2;
+    }
+    /* Animated blobs for scientific art */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.4;
+      z-index: -1;
+    }
+    .blob-1 {
+      width: 360px;
+      height: 360px;
+      background: radial-gradient(circle, rgba(30,58,138,0.6), transparent 70%);
+      top: -120px;
+      left: -100px;
+      animation: drift 25s infinite ease-in-out;
+    }
+    .blob-2 {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(56,189,248,0.5), transparent 70%);
+      top: 60%;
+      left: -60px;
+      animation: drift 30s infinite ease-in-out reverse;
+    }
+    .blob-3 {
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(59,130,246,0.5), transparent 70%);
+      top: 20%;
+      right: -80px;
+      animation: pulse 18s infinite alternate;
+    }
+    @keyframes drift {
+      0%,100% { transform: translate(0, 0); }
+      25% { transform: translate(20px, -15px); }
+      50% { transform: translate(-15px, 25px); }
+      75% { transform: translate(15px, 15px); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.3; }
+      100% { transform: scale(1.1); opacity: 0.45; }
+    }
+    /* Glass effect for cards and panels */
+    .glass {
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.4);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    /* Lift effect on hover */
+    .lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    }
+
+    /* ========= Carousel Styles ========= */
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+    .carousel-track {
+      display: flex;
+      gap: 3rem;
+      animation: scroll 40s linear infinite;
+    }
+    .carousel-img {
+      height: 3rem;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.9;
+      transition: opacity 0.3s;
+    }
+    .carousel-img:hover {
+      opacity: 1;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* 3D course grid and card design for home page */
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      position: relative;
+      transform-style: preserve-3d;
+      transform: perspective(1000px);
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px -10px rgba(14,34,74,.15);
+      transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1);
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-8px) rotateX(5deg) rotateY(-3deg);
+      box-shadow: 0 20px 40px -10px rgba(0,0,0,.25);
+    }
+    .glare {
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      background: radial-gradient(circle at var(--x) var(--y), rgba(255,255,255,.35), transparent 40%);
+      opacity: 0;
+      transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
+      pointer-events: none;
+    }
+    .card:hover .glare { opacity: 1; }
+    .card-thumb {
+      height: 160px;
+      border-radius: 20px 20px 0 0;
+      overflow: hidden;
+    }
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0,0,0,0.45);
+      color: #fff;
+      font-size: .7rem;
+      padding: .3rem .6rem;
+      border-radius: 999px;
+      backdrop-filter: blur(4px);
+    }
+    .card-body { padding: 1.5rem 1.25rem 1rem; }
+    .card-title { font-size: 1.2rem; font-weight: 600; margin-bottom: .5rem; }
+    .card-meta { display: flex; gap: .75rem; font-size: .75rem; color: #6c7a91; }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.25rem 1.25rem;
+    }
+    .card-level {
+      padding: .25rem .6rem;
+      border-radius: 999px;
+      font-size: .65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    .level-beginner { background: #dcfce7; color: #166534; }
+    .level-intermediate { background: #fef3c7; color: #92400e; }
+    .level-advanced { background: #fee2e2; color: #991b1b; }
+    .level-expert { background: #e0e7ff; color: #3730a3; }
+    .card-price { font-weight: 700; font-size: 1.1rem; color: #1e3a8a; }
+
+    /* Flip-card animation for AI Learning Tracks */
+    .flip-card { perspective: 1000px; }
+    .flip-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; }
+    .flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+    .flip-front, .flip-back { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 1rem; }
+    .flip-back { transform: rotateY(180deg); }
+
+    /* Removed !important by increasing specificity */
+    .flip-front {
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.45);
+    }
+    .flip-front div {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.45);
+    }
+
+    /* Style navigation buttons for track pagination */
+    .prev-tracks-btn, .next-tracks-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      border: 2px solid var(--primary);
+      background-color: var(--primary);
+      color: #ffffff;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .prev-tracks-btn:hover, .next-tracks-btn:hover {
+      background-color: #314795;
+      color: #ffffff;
+    }
+
+    /* ----------  CATEGORY PILL  ---------- */
+    .category-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      width: 100%;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+      background: transparent;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background 0.35s cubic-bezier(.4,0,.2,1), color 0.35s cubic-bezier(.4,0,.2,1);
+    }
+    .category-pill:hover {
+      background: rgba(30, 58, 138, 0.08);
+      color: var(--primary);
+    }
+    .category-pill.active {
+      background: rgba(30, 58, 138, 0.15);
+      color: var(--primary);
+    }
+    .category-pill.active i {
+      color: var(--primary);
+    }
+
+    /* Sidebar container and search styling for home page */
+    .sidebar {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+    }
+    .sidebar-search {
+      position: relative;
+    }
+    .sidebar-search input {
+      width: 100%;
+      padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+      background: var(--bg);
+      border: 1px solid var(--bg);
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--text);
+    }
+    .sidebar-search i {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+    }
+    .sidebar-section {
+      margin-top: 1.5rem;
+    }
+    .sidebar-section h3 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .category-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    /* Removed !important by increasing specificity */
+    .flip-back .course-nav button {
+      padding: 0.25rem 0.6rem;
+      border-radius: 9999px;
+      font-weight: 500;
+      font-size: 0.75rem;
+      border: 1px solid var(--primary);
+      background-color: #ffffff;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .flip-back .course-nav button i {
+      font-size: 0.75rem;
+    }
+    .flip-back .course-nav button:hover {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    /* Shared styling for course pagination buttons inside flip cards */
+    .course-nav-btn {
+      padding: 0.25rem 0.6rem;
+      border-radius: 9999px;
+      font-weight: 500;
+      font-size: 0.75rem;
+      border: 1px solid var(--primary);
+      background-color: #ffffff;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .course-nav-btn:hover {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+    
+    /* Enhanced header styling */
+    .header-logo {
+      height: 40px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+    .header-logo:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Enhanced button styling */
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px 0 rgba(30, 64, 175, 0.3);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px 0 rgba(30, 64, 175, 0.4);
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: var(--primary);
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      border: 2px solid var(--primary);
+      transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    /* Enhanced card styling */
+    .enhanced-card {
+      background: white;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+    .enhanced-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+    
+    /* Tab styling enhancements */
+    .tab-active {
+      color: var(--primary);
+      border-bottom: 3px solid var(--primary);
+    }
+    
+    /* Enhanced testimonial styling */
+    .testimonial-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+    .testimonial-card::before {
+      
+        content: "“";
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        font-size: 80px;    
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      font-size: 80px;
+      color: rgba(30, 64, 175, 0.1);
+      font-family: serif;
+    }
+    
+    /* Enhanced FAQ styling */
+    .faq-item {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+    }
+    .faq-question {
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-answer {
+      margin-top: 1rem;
+      color: #4b5563;
+    }
+    
+    /* Enhanced CTA section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 4rem 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+  <body class="bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 min-h-screen text-gray-800 overflow-x-hidden relative">
+  <!-- Skip navigation link for accessibility -->
+  <a href="#maincontent" class="skip-link sr-only focus:not-sr-only absolute top-0 left-0 bg-white text-blue-800 p-2 m-2 rounded shadow z-50">Skip to main content</a>
+  <!-- Top Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-20 bg-white bg-opacity-90 backdrop-blur-md border-b border-blue-200 shadow-sm" role="navigation" aria-label="Primary">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="home.html" class="flex items-center gap-2">
+        <img src="https://nanoschool.in/wp-content/uploads/2024/08/Untitled-design-2.png" alt="NanoSchool AI Logo" class="header-logo">
+        <span class="text-xl font-extrabold text-blue-800">NanoSchool AI</span>
+      </a>
+      <button id="menuToggle" class="lg:hidden text-blue-800 text-2xl" aria-label="Open menu" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul id="navLinks" class="hidden lg:flex items-center gap-6 font-medium text-blue-700">
+        <li><a href="#tracksSection" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Tracks</a></li>
+        <li><a href="https://nanoschool.in/ai/courses/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Courses</a></li>
+        <li><a href="https://nanoschool.in/ai/workshops/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Workshops</a></li>
+        <li><a href="https://nanoschool.in/mentors/portfolio/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Mentors</a></li>
+        <li><a href="https://nanoschool.in/login-registration/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Dashboard</a></li>
+        <li><a href="#testimonials" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Testimonials</a></li>
+<li><a href="https://nanoschool.in/ai/faq/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">FAQ</a></li>
+      </ul>
+    </div>
+    <!-- Mobile navigation -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white bg-opacity-95 backdrop-blur border-t border-blue-200">
+      <ul class="p-4 space-y-2 font-medium text-blue-700">
+        <li><a href="#tracksSection" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Tracks</a></li>
+        <li><a href="https://nanoschool.in/ai/courses/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Courses</a></li>
+        <li><a href="https://nanoschool.in/ai/workshops/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Workshops</a></li>
+        <li><a href="https://nanoschool.in/mentors/portfolio/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Mentors</a></li>
+        <li><a href="https://nanoschool.in/login-registration/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Dashboard</a></li>
+        <li><a href="#testimonials" class="block py-2 px-4 hover:bg-blue-50 rounded transition">Testimonials</a></li>
+<li><a href="https://nanoschool.in/ai/faq/" class="block py-2 px-4 hover:bg-blue-50 rounded transition">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Background art -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <!-- Hero Section -->
+  <header class="pt-32 pb-20 text-center relative z-10">
+    <div class="max-w-5xl mx-auto px-6 space-y-8">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+        Transform Your Career with <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-blue-600 to-blue-800">AI</span>
+      </h1>
+      <p class="text-xl md:text-2xl opacity-90 font-light max-w-3xl mx-auto">
+        Powered by NSTC — India's leading deep science learning edtech with 17 years of excellence. Explore Industrial AI tracks, domains, workshops and mentorship to accelerate your career.
+      </p>
+      <!-- Tagline Stats -->
+      <div class="flex flex-wrap justify-center gap-6 mt-4">
+        <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
+          <i class="fas fa-certificate text-yellow-500 text-xl" aria-hidden="true"></i>
+          <span class="font-semibold text-gray-700">Professional Certification</span>
+        </div>
+        <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
+          <i class="fas fa-book-open text-green-500 text-xl" aria-hidden="true"></i>
+          <span class="font-semibold text-gray-700">250+ Courses</span>
+        </div>
+        <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
+          <i class="fas fa-star text-yellow-400 text-xl" aria-hidden="true"></i>
+          <span class="font-semibold text-gray-700">4.9/5 from 30,000+ learners</span>
+        </div>
+        <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
+          <i class="fas fa-clock text-red-500 text-xl" aria-hidden="true"></i>
+          <span class="font-semibold text-gray-700">Next batch starting in 48 hours</span>
+        </div>
+      </div>
+      <!-- Hero Call to Action -->
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <!-- Updated anchor to scroll to the AI Learning Tracks section (tracksSection) -->
+        <a href="https://nanoschool.in/ai/courses/" class="btn-primary">Explore All Programs</a>
+        <a href="#tracksSection" class="btn-secondary">View All Courses</a>
+        <!-- Call to action button for enquiries -->
+        <a href="tel:+911234567890" class="btn-secondary" aria-label="Call NanoSchool support">Call Us</a>
+      </div>
+      <!-- Hero Summary Stats -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 max-w-3xl mx-auto">
+        <div class="glass rounded-2xl p-4 text-center">
+          <h3 class="text-3xl font-bold text-blue-800">4.9/5</h3>
+          <p class="text-xs text-gray-600">Average Rating</p>
+        </div>
+        <div class="glass rounded-2xl p-4 text-center">
+          <h3 class="text-3xl font-bold text-blue-800">1650+</h3>
+          <p class="text-xs text-gray-600">AI Programs</p>
+        </div>
+        <div class="glass rounded-2xl p-4 text-center">
+          <h3 class="text-3xl font-bold text-blue-800">30K+</h3>
+          <p class="text-xs text-gray-600">Learners</p>
+        </div>
+        <div class="glass rounded-2xl p-4 text-center">
+          <h3 class="text-3xl font-bold text-blue-800">95+</h3>
+          <p class="text-xs text-gray-600">Countries</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main id="maincontent" class="max-w-7xl mx-auto px-6 py-16 space-y-16" role="main">
+    <!-- Image scrollers: combine university and industry carousels into a single showcase after the hero -->
+    <section id="partners" class="space-y-12">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl md:text-4xl font-bold">Trusted by Top Universities & Companies</h2>
+        <p class="text-gray-700 text-lg">Join learners from world‑class institutions and industry leaders.</p>
+      </div>
+      <!-- Combined carousel of university and industry logos -->
+      <div class="glass rounded-2xl p-6 lift overflow-hidden">
+        <div class="carousel-container" aria-label="Partners logos" role="group">
+          <div class="carousel-track">
+            <!-- Universities logos -->
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-15-15-removebg-preview.png" alt="University of Sydney" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Vellore_Institute_of_Technology-removebg-preview.png" alt="Vellore Institute of Technology" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-14-26-removebg-preview.png" alt="University of Sydney" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Manipal_Institute_of_Technology-removebg-preview.png" alt="Manipal University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-53-00-removebg-preview.png" alt="NIT Durgapur" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-52-41-removebg-preview.png" alt="University of Hyderabad" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-18-53-removebg-preview.png" alt="Ben Gurion University of Negev" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-14-46-removebg-preview.png" alt="Princess Nora bint Abdul Rahman University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-53-19-removebg-preview.png" alt="IIT Delhi" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-15-40-removebg-preview.png" alt="University of Massachusetts" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-54-41-removebg-preview.png" alt="Guru Jambheshwar University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-55-30-removebg-preview-1.png" alt="North Eastern University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-13-59-removebg-preview.png" alt="Wesleyan University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-16-41-removebg-preview.png" alt="Texas Southern University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-16-54-removebg-preview.png" alt="University of Birmingham" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-55-54-removebg-preview.png" alt="Banaras Hindu University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-21_10-17-59-removebg-preview.png" alt="University of Nairobi" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-57-43-removebg-preview.png" alt="IIT Jodhpur" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-57-55-removebg-preview.png" alt="Bharathiar University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Screenshot_from_2023-10-20_16-58-10-removebg-preview.png" alt="IIT Roorkee" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Aligarh_Muslim_University_-removebg-preview.png" alt="Aligarh Muslim University" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Alagappa_University_-removebg-preview.png" alt="Alagappa University" loading="lazy" />
+            <!-- Industry logos -->
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Wipro_Technologies_-removebg-preview.png" alt="Wipro Technologies" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Infosys_Technologies_Ltd._-removebg-preview.png" alt="Infosys Technologies" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Tata_Consultancy_Services_Ltd.-removebg-preview.png" alt="Tata Consultancy Services" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/SAP_Labs-removebg-preview.png" alt="SAP Labs" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/HCL_Technologies_Ltd.-removebg-preview.png" alt="HCL Technologies" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Cognizant_Technologies_-removebg-preview.png" alt="Cognizant Technologies" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Accenture-removebg-preview.png" alt="Accenture" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/ISRO-removebg-preview.png" alt="ISRO" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/DRDO_-removebg-preview.png" alt="DRDO" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/BHEL_-removebg-preview.png" alt="BHEL" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/ONGC_Ltd._-removebg-preview.png" alt="ONGC" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Tata_Steel_-removebg-preview.png" alt="Tata Steel" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/SAIL-removebg-preview.png" alt="SAIL" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Larsen___Toubro-removebg-preview.png" alt="Larsen & Toubro" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Mahindra___Mahindra_Ltd.-removebg-preview.png" alt="Mahindra & Mahindra" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Siemens-removebg-preview.png" alt="Siemens" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Pfizer_Ltd._-removebg-preview.png" alt="Pfizer" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Dr._Reddy_s_Lab_-removebg-preview.png" alt="Dr Reddy's" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Apollo_Hospital_-removebg-preview.png" alt="Apollo Hospital" loading="lazy" />
+            <img class="carousel-img" src="https://nanoschool.in/wp-content/uploads/2023/10/Johnson___Johnson_-removebg-preview.png" alt="Johnson & Johnson" loading="lazy" />
+          </div>
+        </div>
+        <!-- Control button to pause/resume the scrolling logos for accessibility -->
+        <div class="flex justify-center mt-4">
+          <button id="toggleCarousel" class="px-3 py-1 text-sm text-blue-800 border border-blue-800 rounded-full hover:bg-blue-800 hover:text-white transition" aria-label="Pause carousel" aria-pressed="false">Pause</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops showcase moved outside the grid for better flow -->
+    <section id="workshops" class="space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl md:text-4xl font-bold">Upcoming Workshops</h2>
+        <p class="text-gray-700 text-lg">Live, interactive sessions in high‑impact domains.</p>
+      </div>
+      <div style="all: revert;">[display-frm-data id=76340]</div>
+    </section>
+
+    <!-- Sidebar and content section for featured courses & tracks -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+      <!-- Sidebar for domains -->
+      <aside class="sidebar lg:col-span-1" role="complementary" aria-label="Course domains">
+        <!-- Search box for filtering categories (optional functionality) -->
+        <div class="sidebar-search">
+          <input type="text" placeholder="Search categories" aria-label="Search categories">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </div>
+        <!-- Domain links rendered vertically (without scroll) -->
+        <div class="sidebar-section">
+          <h3>Domains</h3>
+          <div id="domainLinks" class="category-list"></div>
+          <button id="moreDomains" class="mt-2 w-full text-sm text-blue-800 underline" aria-label="Load more domain categories">Load More Domains</button>
+        </div>
+      </aside>
+
+      <!-- Main content area with new tabbed layout -->
+      <section class="lg:col-span-4 space-y-8">
+        <div class="text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Explore Our Programs</h2>
+            <p class="text-gray-700 text-lg">Choose from curated courses or follow a guided learning track.</p>
+        </div>
+    
+        <div class="bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden">
+          <!-- Tab List -->
+          <div role="tablist" aria-label="Programs tabs" class="relative grid grid-cols-2">
+            <button 
+              id="tab-courses"
+              class="tab-btn relative py-4 px-2 text-center font-bold text-slate-700 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 aria-selected:text-blue-700 tab-active"
+              role="tab" 
+              aria-selected="true" 
+              aria-controls="panel-courses"
+            >
+              Featured Courses
+            </button>
+            <button 
+              id="tab-workshops"
+              class="tab-btn relative py-4 px-2 text-center font-bold text-slate-700 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 aria-selected:text-blue-700"
+              role="tab" 
+              aria-selected="false" 
+              aria-controls="panel-workshops" 
+              tabindex="-1"
+            >
+              Learning Tracks
+            </button>
+            <!-- Animated active tab indicator -->
+            <div id="active-tab-indicator" class="absolute bottom-0 left-0 h-1 bg-blue-700 transition-all duration-300 ease-in-out"></div>
+          </div>
+    
+          <!-- Tab Panels -->
+          <div class="p-6 md:p-8">
+            <!-- Panel 1: Featured Courses -->
+            <section id="panel-courses" class="tab-panel" role="tabpanel" aria-labelledby="tab-courses">
+              <div class="flex justify-end items-center mb-4">
+                <label for="featuredSort" class="mr-2 text-sm font-medium text-blue-900">Sort by:</label>
+                <select id="featuredSort" class="py-1 px-3 rounded border border-blue-300 bg-white text-sm text-blue-800 shadow-sm">
+                  <option value="default">Random</option>
+                  <option value="rating-desc">Rating (High to Low)</option>
+                  <option value="rating-asc">Rating (Low to High)</option>
+                  <option value="price-asc">Price (Low to High)</option>
+                  <option value="price-desc">Price (High to Low)</option>
+                  <option value="title-asc">Title (A to Z)</option>
+                  <option value="title-desc">Title (Z to A)</option>
+                </select>
+              </div>
+              <div id="featuredCourses" class="course-grid"></div>
+            </section>
+    
+            <!-- Panel 2: Learning Tracks -->
+            <section id="panel-workshops" class="tab-panel hidden" role="tabpanel" aria-labelledby="tab-workshops" aria-hidden="true">
+               <div id="tracks" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Mentors Section (placed outside of the sidebar layout) -->
+    <section id="mentors" class="space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl md:text-4xl font-bold">Meet Your Mentors</h2>
+        <p class="text-gray-700 text-lg">Learn from AI experts and industry leaders across domains.</p>
+      </div>
+      <div style="all: revert;">[display-frm-data id=76864]</div>
+    </section>
+
+    <!-- Testimonials Section (placed after mentors) -->
+    <section id="testimonials" class="space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl md:text-4xl font-bold">What Learners Say</h2>
+        <p class="text-gray-700 text-lg">Real stories from students and professionals who transformed their careers with NanoSchool.</p>
+      </div>
+      <div style="all: revert;">[display-frm-data id=76595]</div>
+    </section>
+
+<!-- FAQ SECTION -->
+<section class="py-8 sm:py-16" aria-labelledby="faq-title">
+  <div class="max-w-7xl mx-auto px-3 sm:px-5">
+    <h2 id="faq-title" class="text-center text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-tight font-extrabold mb-3">Frequently Asked Questions</h2>
+    <div class="mt-6" id="faq" role="list">
+      <article class="bg-white border border-slate-200 rounded-2xl shadow-md p-4" role="listitem">
+        <button class="faq-q inline-flex items-center justify-between gap-2 w-full bg-slate-100 text-slate-900 border-2 border-slate-200 font-bold rounded-xl cursor-pointer px-5 py-3 text-base transition-all duration-200 shadow-md" aria-expanded="false" aria-controls="a1">
+          <span>Do I need programming experience to join the courses?</span>
+          <span aria-hidden="true">▼</span>
+        </button>
+        <div id="a1" hidden>
+          <p class="mt-4">Basic knowledge of programming is recommended. Specific courses may require familiarity with mathematical concepts. We start with Python basics in Week 1 for beginners.</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-slate-200 rounded-2xl shadow-md p-4 mt-4" role="listitem">
+        <button class="faq-q inline-flex items-center justify-between gap-2 w-full bg-slate-100 text-slate-900 border-2 border-slate-200 font-bold rounded-xl cursor-pointer px-5 py-3 text-base transition-all duration-200 shadow-md" aria-expanded="false" aria-controls="a2">
+          <span>How are the courses delivered?</span>
+          <span aria-hidden="true">▼</span>
+        </button>
+        <div id="a2" hidden>
+          <p class="mt-4">Courses are delivered online with a mix of live lectures, interactive sessions, and hands-on projects. All sessions are recorded for flexible learning.</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-slate-200 rounded-2xl shadow-md p-4 mt-4" role="listitem">
+        <button class="faq-q inline-flex items-center justify-between gap-2 w-full bg-slate-100 text-slate-900 border-2 border-slate-200 font-bold rounded-xl cursor-pointer px-5 py-3 text-base transition-all duration-200 shadow-md" aria-expanded="false" aria-controls="a3">
+          <span>Are the courses suitable for working professionals?</span>
+          <span aria-hidden="true">▼</span>
+        </button>
+        <div id="a3" hidden>
+          <p class="mt-4">Absolutely! Our courses are designed with flexibility in mind to accommodate working professionals. Evening and weekend batches are available.</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-slate-200 rounded-2xl shadow-md p-4 mt-4" role="listitem">
+        <button class="faq-q inline-flex items-center justify-between gap-2 w-full bg-slate-100 text-slate-900 border-2 border-slate-200 font-bold rounded-xl cursor-pointer px-5 py-3 text-base transition-all duration-200 shadow-md" aria-expanded="false" aria-controls="a4">
+          <span>What kind of support do you provide?</span>
+          <span aria-hidden="true">▼</span>
+        </button>
+        <div id="a4" hidden>
+          <p class="mt-4">We offer academic guidance, technical support, and career counseling to ensure our students succeed. Dedicated mentors are available throughout the program.</p>
+        </div>
+      </article>
+
+      <article class="bg-white border border-slate-200 rounded-2xl shadow-md p-4 mt-4" role="listitem">
+        <button class="faq-q inline-flex items-center justify-between gap-2 w-full bg-slate-100 text-slate-900 border-2 border-slate-200 font-bold rounded-xl cursor-pointer px-5 py-3 text-base transition-all duration-200 shadow-md" aria-expanded="false" aria-controls="a5">
+          <span>Are the certifications recognized?</span>
+          <span aria-hidden="true">▼</span>
+        </button>
+        <div id="a5" hidden>
+          <p class="mt-4">Our certifications are recognized by industry leaders worldwide, helping you stand out in the job market. Many of our hiring partners specifically look for our certified professionals.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="py-8 sm:py-16">
+  <div class="max-w-7xl mx-auto px-3 sm:px-5">
+    <div class="cta-section" role="region" aria-label="Call to action">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl text-white leading-tight font-extrabold mb-2">Ready to Transform Your Career?</h2>
+      <p class="text-base sm:text-lg opacity-95 mb-4">Join thousands of professionals who have accelerated their careers with our AI programs</p>
+      <a class="inline-flex items-center justify-center gap-2 font-bold rounded-xl cursor-pointer px-5 py-3 text-base border-2 border-transparent bg-slate-100 text-slate-900 transition-all duration-200 shadow-md hover:bg-slate-200" href="#programs">Start Learning Today
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
+  
+  <!-- Load course data -->
+  <script src="https://nanoschool.in/courses-data/all_courses.js"></script>
+  <!-- Consolidated and Enhanced Page Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // --- HELPER FUNCTIONS ---
+      function starIcons(rating) {
+        if (!rating) return '<span class="text-gray-400">New</span>';
+        const full = Math.floor(rating);
+        const hasHalf = rating % 1 >= 0.5;
+        const empty = 5 - full - (hasHalf ? 1 : 0);
+        return (
+          '<i class="fas fa-star text-yellow-400" aria-hidden="true"></i>'.repeat(full) +
+          (hasHalf ? '<i class="fas fa-star-half-alt text-yellow-400" aria-hidden="true"></i>' : '') +
+          '<i class="far fa-star text-yellow-400" aria-hidden="true"></i>'.repeat(empty)
+        );
+      }
+
+      // --- UI INTERACTIVITY ---
+      // Mobile menu toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+          menuToggle.setAttribute('aria-label', !isExpanded ? 'Close menu' : 'Open menu');
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Partner carousel pause/resume
+      const carouselTrack = document.querySelector('#partners .carousel-track');
+      const carouselBtn = document.getElementById('toggleCarousel');
+      if (carouselTrack && carouselBtn) {
+        carouselBtn.addEventListener('click', () => {
+          const isPlaying = carouselTrack.style.animationPlayState === 'running';
+          carouselTrack.style.animationPlayState = isPlaying ? 'paused' : 'running';
+          carouselBtn.setAttribute('aria-pressed', String(isPlaying));
+          carouselBtn.setAttribute('aria-label', isPlaying ? 'Play carousel' : 'Pause carousel');
+          carouselBtn.textContent = isPlaying ? 'Play' : 'Pause';
+        });
+        // Set initial state for clarity
+        carouselTrack.style.animationPlayState = 'running';
+      }
+
+      // Enhanced Tab functionality
+      const tabs = document.querySelectorAll('.tab-btn');
+      const panels = document.querySelectorAll('.tab-panel');
+      const indicator = document.getElementById('active-tab-indicator');
+
+      function updateIndicator(tab) {
+        if (indicator && tab) {
+          indicator.style.width = `${tab.offsetWidth}px`;
+          indicator.style.left = `${tab.offsetLeft}px`;
+        }
+      }
+
+      function switchTab(clickedTab) {
+        if (clickedTab.getAttribute('aria-selected') === 'true') return;
+
+        panels.forEach(panel => {
+          panel.classList.add('hidden');
+          panel.setAttribute('aria-hidden', 'true');
+        });
+        tabs.forEach(tab => {
+          tab.setAttribute('aria-selected', 'false');
+          tab.tabIndex = -1;
+          tab.classList.remove('tab-active');
+        });
+
+        clickedTab.setAttribute('aria-selected', 'true');
+        clickedTab.tabIndex = 0;
+        clickedTab.classList.add('tab-active');
+        const controlledPanel = document.getElementById(clickedTab.getAttribute('aria-controls'));
+        if (controlledPanel) {
+          controlledPanel.classList.remove('hidden');
+          controlledPanel.setAttribute('aria-hidden', 'false');
+        }
+        updateIndicator(clickedTab);
+      }
+
+      if (tabs.length > 0) {
+        tabs.forEach(tab => {
+          tab.addEventListener('click', (e) => switchTab(e.currentTarget));
+          tab.addEventListener('keydown', (e) => {
+            const tabList = Array.from(tabs);
+            const currentIndex = tabList.indexOf(e.currentTarget);
+            let nextIndex;
+            if (e.key === 'ArrowRight') {
+              nextIndex = (currentIndex + 1) % tabList.length;
+            } else if (e.key === 'ArrowLeft') {
+              nextIndex = (currentIndex - 1 + tabList.length) % tabList.length;
+            }
+            if (nextIndex !== undefined) {
+              e.preventDefault();
+              tabList[nextIndex].focus();
+              switchTab(tabList[nextIndex]);
+            }
+          });
+        });
+
+        const initialActiveTab = document.querySelector('.tab-btn[aria-selected="true"]');
+        if (initialActiveTab) {
+            setTimeout(() => updateIndicator(initialActiveTab), 50);
+        }
+        window.addEventListener('resize', () => {
+            const activeTab = document.querySelector('.tab-btn[aria-selected="true"]');
+            updateIndicator(activeTab);
+        });
+      }
+
+      // FAQ disclosure pattern
+      document.querySelectorAll('.faq-q').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          const target = document.getElementById(btn.getAttribute('aria-controls'));
+          target.hidden = expanded;
+        });
+      });
+
+      // --- DYNAMIC CONTENT LOGIC (dependent on all_courses.js) ---
+      // This logic runs after the external course data is expected to be loaded.
+      const courses = window.allCoursesData || [];
+      if (courses.length > 0) {
+        const featuredContainer = document.getElementById('featuredCourses');
+        const domainLinksContainer = document.getElementById('domainLinks');
+        const moreDomainsBtn = document.getElementById('moreDomains');
+        const featuredSortSelect = document.getElementById('featuredSort');
+        let featuredList = [];
+
+        function createCourseCard(course) {
+          const wrapper = document.createElement('div');
+          const weekMatch = (course.duration || '').match(/(\d+)/);
+          const weeks = weekMatch ? weekMatch[1] : '';
+          const ratingMarkup = course.rating ? `<span class="flex items-center gap-1" aria-label="Rating ${course.rating} out of 5">${starIcons(course.rating)} <span class="ml-1 text-gray-600">${course.rating}</span></span>` : '<span class="text-gray-400">New</span>';
+          const studentsMarkup = course.students ? `<span class="flex items-center gap-1 text-gray-600"><i class="fas fa-users" aria-hidden="true"></i> ${Number(course.students).toLocaleString()}</span>` : '';
+          let statusLabel = 'Active';
+          let statusClasses = 'bg-green-100 text-green-700';
+          if (course.status && course.status.toLowerCase() === 'upcoming') {
+            statusLabel = 'Upcoming';
+            statusClasses = 'bg-yellow-100 text-yellow-700';
+          } else if (course.status && course.status.toLowerCase() !== 'active') {
+            statusLabel = course.status;
+            statusClasses = 'bg-gray-200 text-gray-700';
+          }
+          let levelClasses = 'bg-gray-200 text-gray-700';
+          if (course.level === 'Beginner') levelClasses = 'bg-blue-100 text-blue-800';
+          else if (course.level === 'Intermediate') levelClasses = 'bg-yellow-100 text-yellow-800';
+          else if (course.level === 'Advanced') levelClasses = 'bg-red-100 text-red-800';
+          else if (course.level === 'Expert') levelClasses = 'bg-purple-100 text-purple-800';
+          const html = `
+            <div class="rounded-xl shadow-md overflow-hidden bg-white transform transition-transform duration-300 hover:-translate-y-1">
+                <div class="h-32 bg-gradient-to-r from-blue-500 to-purple-500 relative flex items-center justify-center">
+                <i class="fas fa-robot text-5xl text-white opacity-90" aria-hidden="true"></i>
+                <span class="absolute top-2 right-2 px-3 py-1 rounded-full text-xs font-medium ${statusClasses}">${statusLabel}</span>
+              </div>
+              <div class="p-4 space-y-2">
+                <h3 class="text-lg font-semibold text-gray-800">${course.title}</h3>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                  <span class="flex items-center gap-1"><i class="far fa-clock" aria-hidden="true"></i> ${weeks ? weeks + ' wks' : ''}</span>
+                  <span class="px-2 py-0.5 rounded-full text-xs font-semibold ${levelClasses}">${course.level || ''}</span>
+                </div>
+                ${course.tool ? `<div class="flex items-start gap-1 text-sm text-gray-600"><i class="fas fa-tools mt-0.5" aria-hidden="true"></i><span class="truncate">${course.tool}</span></div>` : ''}
+                ${course.domain ? `<div class="flex items-start gap-1 text-xs text-gray-600 uppercase tracking-wide"><i class="fas fa-tag mt-0.5" aria-hidden="true"></i><span class="truncate">${course.domain}</span></div>` : ''}
+                <div class="flex items-center justify-between text-sm">
+                  ${ratingMarkup}
+                  ${studentsMarkup}
+                </div>
+                <div class="grid grid-cols-2 gap-2 pt-2">
+                  <a href="${course.enrollmentUrl || '#'}" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-md text-sm">Enroll</a>
+                  <a href="${course.mainPageUrl || '#'}" target="_blank" rel="noopener noreferrer" class="border border-blue-600 text-blue-600 text-center py-2 rounded-md text-sm hover:bg-blue-50">Details</a>
+                </div>
+              </div>
+            </div>`;
+          wrapper.innerHTML = html;
+          return wrapper.firstElementChild;
+        }
+
+        function populateFeatured() {
+          if (!courses.length || !featuredContainer) return;
+          const shuffled = [...courses].sort(() => 0.5 - Math.random());
+          featuredList = shuffled.slice(0, 12);
+          renderFeatured(featuredList);
+        }
+
+        function renderFeatured(list) {
+          if (!featuredContainer) return;
+          featuredContainer.innerHTML = '';
+          list.slice(0, 12).forEach(c => featuredContainer.appendChild(createCourseCard(c)));
+        }
+
+        function getPriceValue(price) {
+          if (!price || price === 'Free') return 0;
+          const num = parseFloat(price.toString().replace(/[^0-9.]/g, ''));
+          return isNaN(num) ? 0 : num;
+        }
+
+        function sortFeatured() {
+          if (!featuredList || !featuredList.length) return;
+          let sorted = [...featuredList];
+          const sortBy = featuredSortSelect ? featuredSortSelect.value : 'default';
+          switch (sortBy) {
+            case 'rating-desc': sorted.sort((a,b) => (b.rating || 0) - (a.rating || 0)); break;
+            case 'rating-asc': sorted.sort((a,b) => (a.rating || 0) - (b.rating || 0)); break;
+            case 'price-asc': sorted.sort((a,b) => getPriceValue(a.price) - getPriceValue(b.price)); break;
+            case 'price-desc': sorted.sort((a,b) => getPriceValue(b.price) - getPriceValue(a.price)); break;
+            case 'title-asc': sorted.sort((a,b) => a.title.localeCompare(b.title)); break;
+            case 'title-desc': sorted.sort((a,b) => b.title.localeCompare(a.title)); break;
+          }
+          renderFeatured(sorted);
+        }
+
+        function populateDomains(limit) {
+          if (!domainLinksContainer) return;
+          const uniqueDomains = [...new Set(courses.map(c => c.domain))];
+          const display = uniqueDomains.slice(0, limit);
+          domainLinksContainer.innerHTML = '';
+          display.forEach(domain => {
+            const clean = domain.replace(/[“”]/g, '').trim();
+            const a = document.createElement('a');
+            a.href = `courses/listing?domain=${encodeURIComponent(domain)}`;
+            a.className = 'category-pill';
+            const icon = document.createElement('i');
+            icon.className = 'fas fa-layer-group';
+            icon.style.fontSize = '0.8rem';
+            icon.style.color = getComputedStyle(document.documentElement).getPropertyValue('--muted') || '#64748b';
+            const span = document.createElement('span');
+            span.textContent = clean;
+            a.appendChild(icon);
+            a.appendChild(span);
+            domainLinksContainer.appendChild(a);
+          });
+          if (moreDomainsBtn) {
+            moreDomainsBtn.classList.toggle('hidden', uniqueDomains.length <= limit);
+          }
+        }
+        let domainsLimit = 6;
+        if (moreDomainsBtn) {
+          moreDomainsBtn.addEventListener('click', () => {
+            domainsLimit += 6;
+            populateDomains(domainsLimit);
+          });
+        }
+
+        function getIconForTrack(name) {
+          const t = (name || '').toLowerCase();
+          if (t.includes('quantum') || t.includes('neuro')) return 'fa-atom';
+          if (t.includes('research') || t.includes('model') || t.includes('scientific')) return 'fa-microscope';
+          if (t.includes('enterprise') || t.includes('law') || t.includes('economic') || t.includes('strategy')) return 'fa-building';
+          if (t.includes('health') || t.includes('bio') || t.includes('med') || t.includes('education') || t.includes('people')) return 'fa-heartbeat';
+          if (t.includes('sustain') || t.includes('climate') || t.includes('environment') || t.includes('smart')) return 'fa-leaf';
+          if (t.includes('policy') || t.includes('govern')) return 'fa-gavel';
+          if (t.includes('no-code') || t.includes('citizen')) return 'fa-lightbulb';
+          return 'fa-brain';
+        }
+
+        function generateTrackCards() {
+          const container = document.getElementById('tracks');
+          if (!container) return;
+
+          const groups = {};
+          courses.forEach(c => {
+            const tNameRaw = (c.track || '').replace(/[“”]/g, '').trim();
+            if (!tNameRaw) return;
+            const corrections = {
+              'TERPRISE, LAW & ECONOMICS APPLICATIONS': 'Enterprise, Law & Economics Applications',
+              'ALTH, PEOPLE & EDUCATION APPLICATIONS': 'Health, People & Education Applications',
+              'TAINABILITY, EMERGING INDUSTRIES & GOVERNANCE APPLICATIONS': 'Sustainability, Emerging Industries & Governance Applications',
+              'STAINABILITY, EMERGING INDUSTRIES & GOVERNANCE APPLICATIONS': 'Sustainability, Emerging Industries & Governance Applications'
+            };
+            const upper = tNameRaw.toUpperCase();
+            const corrected = corrections[upper] || tNameRaw;
+            const tName = corrected.replace(/\s+/g, ' ');
+            if (!groups[tName]) groups[tName] = [];
+            groups[tName].push(c);
+          });
+
+          const palettes = ['from-blue-500 to-cyan-500', 'from-indigo-500 to-purple-600', 'from-green-500 to-teal-600', 'from-amber-400 to-orange-500', 'from-pink-500 to-rose-500', 'from-teal-500 to-sky-500', 'from-red-500 to-pink-500', 'from-purple-500 to-fuchsia-600', 'from-cyan-500 to-blue-600', 'from-violet-500 to-indigo-600'];
+          const trackNames = Object.keys(groups).sort((a,b) => a.localeCompare(b));
+          const tracksData = trackNames.map((tName, idx) => {
+            const list = groups[tName].sort((a, b) => (b.rating || 0) - (a.rating || 0));
+            const mapped = list.map(c => {
+              const weekMatch = (c.duration || '').match(/(\d+)/);
+              const weeks = weekMatch ? weekMatch[1] : '';
+              const rawDesc = c.description || c.domain || '';
+              let trimmedDesc = rawDesc.length > 80 ? rawDesc.substring(0, 77) + '...' : rawDesc;
+              return { name: c.title, desc: trimmedDesc, weeks: weeks, level: c.level || '', rating: c.rating || 0, students: c.students || 0, status: c.status || '', tool: c.tool || '', domain: c.domain || '', price: c.price || '', enrollmentUrl: c.enrollmentUrl || '#', mainPageUrl: c.mainPageUrl || '#' };
+            });
+            let subtitle = tName.match(/^\s*AI\s*(for)?\s*/i) ? tName.slice(tName.match(/^\s*AI\s*(for)?\s*/i)[0].length).trim() : tName;
+            if (!subtitle) subtitle = 'AI track courses';
+            return { title: tName, icon: getIconForTrack(tName), subtitle, color: palettes[idx % palettes.length], courses: mapped };
+          });
+
+          let tracksPage = 0;
+          const perPageTracks = 6;
+          const nav = document.createElement('div');
+          nav.className = 'mt-4 flex justify-between text-sm';
+          const prevTracksBtn = document.createElement('button');
+          prevTracksBtn.type = 'button';
+          prevTracksBtn.textContent = 'Prev';
+          prevTracksBtn.className = 'prev-tracks-btn';
+          const nextTracksBtn = document.createElement('button');
+          nextTracksBtn.type = 'button';
+          nextTracksBtn.textContent = 'Next';
+          nextTracksBtn.className = 'next-tracks-btn';
+          nav.appendChild(prevTracksBtn);
+          nav.appendChild(nextTracksBtn);
+
+          function renderTracksPage() {
+            container.innerHTML = '';
+            const start = tracksPage * perPageTracks;
+            const end = start + perPageTracks;
+            const slice = tracksData.slice(start, end);
+            slice.forEach(t => {
+              const card = document.createElement('div');
+              card.className = 'flip-card cursor-pointer';
+              const encodedTitle = encodeURIComponent(t.title).replace(/\(/g, '%28').replace(/\)/g, '%29');
+              card.innerHTML = `
+                <div class="flip-inner">
+                  <div class="flip-front bg-gradient-to-br ${t.color} p-6 flex flex-col justify-between shadow-xl hover:shadow-2xl transition rounded-xl text-white">
+                    <div>
+                      <i class="fa-solid ${t.icon} text-3xl mb-3" aria-hidden="true"></i>
+                      <div class="text-2xl font-bold">${t.title}</div>
+                      <div class="text-sm opacity-80 mt-1">${t.subtitle}</div>
+                    </div>
+                    <div class="text-xs opacity-70">Click to flip →</div>
+                  </div>
+                  <div class="flip-back bg-blue-50/90 backdrop-blur p-6 flex flex-col rounded-xl">
+                    <div class="flex items-center justify-between mb-3">
+                      <div class="text-lg font-semibold">${t.title}</div>
+                      <button type="button" class="text-slate-400 hover:text-black close-btn"><i class="fa-solid fa-times" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="courses-container space-y-2 overflow-hidden pr-2"></div>
+                    <div class="course-nav mt-2 flex justify-between text-xs">
+                      <button type="button" class="prev-btn hidden text-blue-500 hover:text-blue-700"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+                      <button type="button" class="next-btn hidden text-blue-500 hover:text-blue-700">Next <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="mt-3 text-center">
+                      <a href="courses/listing?track=${encodedTitle}" onclick="event.stopPropagation()" class="text-blue-600 hover:text-blue-800 text-sm underline">View more &rarr;</a>
+                    </div>
+                  </div>
+                </div>
+              `;
+              card.style.height = '25rem';
+              card.tabIndex = 0;
+              card.setAttribute('role', 'button');
+              card.setAttribute('aria-label', `Flip card for ${t.title} courses`);
+              card.addEventListener('click', (e) => {
+                if (e.target.closest('a')) return;
+                document.querySelectorAll('.flip-card').forEach(c => {
+                  if (c !== card) c.classList.remove('flipped');
+                });
+                card.classList.toggle('flipped');
+              });
+              card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } });
+              const closeBtn = card.querySelector('.close-btn');
+              if (closeBtn) {
+                closeBtn.setAttribute('aria-label', 'Close card');
+                closeBtn.addEventListener('click', e => { e.stopPropagation(); card.classList.remove('flipped'); });
+              }
+              
+              const coursesContainer = card.querySelector('.courses-container');
+              const prevBtn = card.querySelector('.prev-btn');
+              const nextBtn = card.querySelector('.next-btn');
+              if(prevBtn) prevBtn.className = 'course-nav-btn prev-btn';
+              if(nextBtn) nextBtn.className = 'course-nav-btn next-btn';
+              let innerPage = 0;
+              function renderInnerPage() {
+                const perPage = 6;
+                const innerStart = innerPage * perPage;
+                const innerEnd = innerStart + perPage;
+                const items = t.courses.slice(innerStart, innerEnd);
+                coursesContainer.innerHTML = '';
+                items.forEach(c => {
+                  let levelClasses = 'bg-gray-200 text-gray-700';
+                  if (c.level === 'Beginner') levelClasses = 'bg-blue-100 text-blue-800';
+                  else if (c.level === 'Intermediate') levelClasses = 'bg-yellow-100 text-yellow-800';
+                  else if (c.level === 'Advanced') levelClasses = 'bg-red-100 text-red-800';
+                  else if (c.level === 'Expert') levelClasses = 'bg-purple-100 text-purple-800';
+                  const ratingMarkup = c.rating ? `<span class="flex items-center gap-1" aria-label="Rating ${c.rating} out of 5">${starIcons(c.rating)} <span class="ml-0.5">${c.rating}</span></span>` : '';
+                  const studentsMarkup = c.students ? `<span class="flex items-center gap-1"><i class="fas fa-users" aria-hidden="true"></i> ${Number(c.students).toLocaleString()}</span>` : '';
+                  const weeksSpan = c.weeks ? `<span><i class="far fa-clock mr-1" aria-hidden="true"></i>${c.weeks} w</span>` : '';
+                  coursesContainer.innerHTML += `<div class="border-l-4 border-blue-200 bg-white rounded-r p-3 space-y-1">
+                    <div class="flex items-start justify-between">
+                      <div class="font-semibold text-gray-800 truncate">${c.name}</div>
+                      ${c.level ? `<span class="px-2 py-0.5 rounded-full text-xs font-semibold ${levelClasses}">${c.level}</span>` : ''}
+                    </div>
+                    <div class="text-xs text-gray-600">${c.desc || ''}</div>
+                    <div class="flex flex-wrap justify-between gap-2 mt-1 text-xs text-gray-500">
+                      ${weeksSpan}
+                      ${ratingMarkup}
+                      ${studentsMarkup}
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                      <a href="${c.enrollmentUrl || '#'}" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white text-center py-1 px-3 rounded-md text-xs">Enroll</a>
+                      <a href="${c.mainPageUrl || '#'}" target="_blank" rel="noopener noreferrer" class="border border-blue-600 text-blue-600 text-center py-1 px-3 rounded-md text-xs hover:bg-blue-50">Details</a>
+                    </div>
+                  </div>`;
+                });
+                if(prevBtn) prevBtn.style.display = (innerPage > 0) ? 'inline-flex' : 'none';
+                if(nextBtn) nextBtn.style.display = (innerEnd < t.courses.length) ? 'inline-flex' : 'none';
+              }
+              renderInnerPage();
+              if(prevBtn) prevBtn.addEventListener('click', e => { e.stopPropagation(); if (innerPage > 0) { innerPage--; renderInnerPage(); } });
+              if(nextBtn) nextBtn.addEventListener('click', e => { e.stopPropagation(); const perPage = 6; if ((innerPage + 1) * perPage < t.courses.length) { innerPage++; renderInnerPage(); } });
+              container.appendChild(card);
+            });
+            if(prevTracksBtn) prevTracksBtn.style.display = (tracksPage > 0) ? 'inline-flex' : 'none';
+            if(nextTracksBtn) nextTracksBtn.style.display = ((tracksPage + 1) * perPageTracks < tracksData.length) ? 'inline-flex' : 'none';
+          }
+          renderTracksPage();
+          const tracksSection = document.getElementById('tracksSection');
+          if (tracksSection) tracksSection.appendChild(nav);
+          else if (container.parentNode) container.parentNode.insertBefore(nav, container.nextSibling);
+          prevTracksBtn.addEventListener('click', e => { e.stopPropagation(); if (tracksPage > 0) { tracksPage--; renderTracksPage(); } });
+          nextTracksBtn.addEventListener('click', e => { e.stopPropagation(); if ((tracksPage + 1) * perPageTracks < tracksData.length) { tracksPage++; renderTracksPage(); } });
+        }
+
+        // Initial population
+        populateFeatured();
+        populateDomains(domainsLimit);
+        generateTrackCards();
+        if (featuredSortSelect) {
+          featuredSortSelect.addEventListener('change', sortFeatured);
+        }
+      }
+
+    });
+  </script>
+</body>
+</html>

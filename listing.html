@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Catalog | NanoSchool</title>
+  <meta name="description" content="Browse AI, ML, Quantum and deep science courses by track, domain, tool and level at NanoSchool. Use filters and sorting to find your perfect course." />
+  <!-- Add data-base attribute to preserve base keywords for dynamic updates -->
+  <meta name="keywords" data-base="NanoSchool, NSTC, AI catalog, course listing, Machine Learning, Quantum AI, Data Science" content="NanoSchool, NSTC, AI catalog, course listing, Machine Learning, Quantum AI, Data Science" />
+  <link rel="canonical" href="https://nanoschool.in/ai/courses/listing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Course Catalog | NanoSchool" />
+  <meta property="og:description" content="Discover our comprehensive AI course catalog. Filter by track, domain, tool and level at NanoSchool powered by NSTC." />
+  <meta property="og:url" content="https://nanoschool.in/ai/courses/listing" />
+  <meta property="og:image" content="https://nanoschool.in/images/ai-courses-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Course Catalog | NanoSchool" />
+  <meta name="twitter:description" content="Browse the NanoSchool AI catalog of courses. Filter and sort to find the best course for your needs." />
+  <meta name="twitter:image" content="https://nanoschool.in/images/ai-courses-og.png" />
+
+  <!-- Structured data for WebSite & Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NanoSchool AI",
+    "url": "https://nanoschool.in/ai/courses/listing",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://nanoschool.in/ai/courses/listing?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "NanoSchool",
+    "url": "https://nanoschool.in",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nanoschool.in/images/ai-courses-og.png"
+    }
+  }
+  </script>
+
+  <!-- FAQ schema for the catalog page to answer common questions about AI and course selection.  These
+       questions map to the accordion panels in the About AI section. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is artificial intelligence and generative AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Artificial intelligence refers to systems that can learn from data and perform tasks associated with human cognition. Generative AI is a subset that creates new text, images, audio or code by modelling patterns in existing data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I choose the right AI course?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consider your current skill level, goals and schedule. Determine whether you need a beginner introduction or advanced deep dive. Filter courses by track, domain, tool and learning format (self‑paced, live or mentor‑led) to find the best match."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the career prospects in artificial intelligence?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI expertise is in high demand across technology, healthcare, finance, retail and manufacturing. Common roles include machine‑learning engineer, data scientist, AI consultant and AI product manager. Salaries are competitive due to the specialised skills required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the latest trends and future directions of AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key trends include multimodal models, agentic AI that acts autonomously, edge AI for on‑device inference, generative models for content creation, explainable AI for transparency and sustainable AI to reduce energy consumption."
+        }
+      }
+    ]
+  }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-........." crossorigin="anonymous" />
+  <!-- Custom palette overrides -->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Dark mode styles -->
+  <style>
+    html.dark {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --text-primary: #e5e7eb;
+      --text-secondary: #94a3b8;
+      --brand-blue: #60a5fa;
+      --brand-dark: #0c4a6e;
+    }
+    html.dark body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+    }
+    html.dark .bg-gray-50 { background-color: var(--bg-primary) !important; }
+    html.dark .bg-white { background-color: var(--bg-secondary) !important; }
+    html.dark .text-gray-700, html.dark .text-gray-600 { color: var(--text-secondary) !important; }
+    html.dark .text-blue-900 { color: var(--brand-blue) !important; }
+    html.dark .bg-blue-900 { background-color: var(--brand-dark) !important; }
+    html.dark .border { border-color: #334155 !important; }
+    html.dark .hover\:bg-blue-50:hover { background-color: #1e3a8a !important; }
+    html.dark .hover\:text-blue-800:hover { color: #93c5fd !important; }
+  </style>
+  <!-- Load course data and scripts with defer to avoid render blocking -->
+  <script defer src="https://nanoschool.in/courses-data/new/data/courses.js"></script>
+  <script defer src="https://nanoschool.in/courses-data/new/js/listing.js"></script>
+  <script defer src="https://nanoschool.in/courses-data/new/js/theme.js"></script>
+  <!-- Scroll to top functionality -->
+  <script defer src="https://nanoschool.in/courses-data/new/js/scroll.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Global navigation bar -->
+  <nav class="bg-white dark:bg-gray-900 shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="https://nanoschool.in/ai/courses/" class="text-2xl font-bold text-blue-600 dark:text-blue-300">NanoSchool</a>
+      <button id="navToggle" class="md:hidden text-gray-700 dark:text-gray-200 focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="navMenu" class="hidden md:flex space-x-6 items-center">
+        <a href="https://nanoschool.in/ai/courses/" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Home</a>
+        <a href="https://nanoschool.in/ai/courses/listing" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Courses</a>
+        <a href="https://nanoschool.in/ai/courses/track" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Tracks</a>
+        <a href="https://nanoschool.in/ai/courses/domain" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Domains</a>
+        <a href="home.html#deepDive" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">About</a>
+        <button aria-label="Toggle dark mode" class="theme-toggle text-gray-700 dark:text-gray-200 text-xl">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 px-4 pb-4 space-y-3">
+      <a href="https://nanoschool.in/ai/courses/" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Home</a>
+      <a href="https://nanoschool.in/ai/courses/listing" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Courses</a>
+      <a href="https://nanoschool.in/ai/courses/track" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Tracks</a>
+      <a href="https://nanoschool.in/ai/courses/domain" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Domains</a>
+      <a href="home.html#deepDive" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">About</a>
+      <button aria-label="Toggle dark mode" class="theme-toggle flex items-center text-gray-700 dark:text-gray-200">
+        <i class="fas fa-moon mr-2"></i> <span>Toggle Theme</span>
+      </button>
+    </div>
+  </nav>
+  <!-- Spacer to offset fixed nav height -->
+  <div class="h-16"></div>
+  <!-- Table of contents for listing page (appears on larger screens) -->
+  <aside id="toc" class="hidden md:block fixed top-32 right-4 w-56 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border dark:border-gray-700 rounded-lg p-4 shadow-md z-20">
+    <h3 class="font-semibold mb-3 text-blue-900 dark:text-blue-200">On this page</h3>
+    <ul class="space-y-2 text-sm">
+      <!-- Added About section to provide SEO-rich introduction and guidance -->
+      <li><a href="#aboutSection" class="hover:underline">About AI &amp; Catalog</a></li>
+      <li><a href="#filterSection" class="hover:underline">Filters</a></li>
+      <li><a href="#coursesContainer" class="hover:underline">Course Results</a></li>
+      <!-- Add statistics section link -->
+    </ul>
+  </aside>
+  <!-- Hero header with gradient, dark mode toggle and decorative shapes -->
+  <header class="relative overflow-hidden text-white py-12 flex justify-between items-center px-4" style="background: linear-gradient(to right, var(--brand-primary), var(--brand-accent));">
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold mb-1">Course Catalog</h1>
+      <p class="text-sm md:text-base opacity-90">Use filters to narrow down your search by track, domain, tool and level</p>
+    </div>
+    <!-- Dark mode toggle moved to global navigation; placeholder retained for layout -->
+    <div></div>
+    <!-- Decorative Blobs for hero section -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <!-- Inline styles for hero shapes -->
+    <style>
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        opacity: 0.4;
+        z-index: 0;
+      }
+      .blob-1 {
+        width: 320px;
+        height: 320px;
+        background: radial-gradient(circle, rgba(0,71,171,0.45), transparent 70%);
+        top: -100px;
+        left: -80px;
+        animation: drift 24s infinite ease-in-out;
+      }
+      .blob-2 {
+        width: 280px;
+        height: 280px;
+        background: radial-gradient(circle, rgba(106,90,205,0.45), transparent 70%);
+        top: 60%;
+        right: -60px;
+        animation: drift 28s infinite ease-in-out reverse;
+      }
+      .blob-3 {
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(0,166,147,0.55), transparent 70%);
+        bottom: -80px;
+        left: 20%;
+        animation: pulse 20s infinite alternate;
+      }
+      @keyframes drift {
+        0%, 100% { transform: translate(0,0); }
+        25% { transform: translate(30px,-20px); }
+        50% { transform: translate(-20px,30px); }
+        75% { transform: translate(20px,20px); }
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.3; }
+        100% { transform: scale(1.1); opacity: 0.5; }
+      }
+    </style>
+  </header>
+  <!--
+    Provide extra space on medium and larger screens for the fixed TOC.
+    The TOC (w-56) sits on the right; without a margin the filters and
+    results may overlap with the sidebar. Adding md:mr-64 shifts the
+    content left to clear the TOC area and maintains a balanced layout.
+  -->
+  <main class="container mx-auto px-4 py-6 md:mr-64">
+    <!-- About AI & Catalog Section -->
+    <section id="aboutSection" class="space-y-6 mb-10">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900">About Our AI Catalog</h2>
+        <p class="text-gray-700 text-lg">Learn about artificial intelligence, how to navigate this catalog and how to choose the right course.</p>
+      </div>
+      <div class="max-w-4xl mx-auto space-y-4">
+        <p class="text-gray-700 text-sm">Artificial intelligence encompasses a broad field of computer science that enables machines to perform tasks that once required human intelligence.  In this catalog you’ll find courses spanning machine learning, deep learning, natural language processing, robotics, quantum computing and more.  These technologies power many of the services we use daily – from personalised recommendations to voice‑activated assistants.  Understanding how AI works allows you to leverage it for both professional and personal projects.  As you explore our catalog, use the filters to narrow courses by track, domain, tool and level so you can focus on the topics that match your interests and goals.</p>
+        <p class="text-gray-700 text-sm">Navigating the catalog is simple: search for keywords or course titles using the search bar, then refine results with our filters.  Choose a track if you’re interested in a particular learning path (e.g., Machine Learning, Deep Learning or Robotics).  Select a domain such as healthcare, finance or education to discover courses tailored to industry‑specific applications.  Use the tool filter to focus on programming languages or frameworks like Python, TensorFlow or Quantum programming.  Finally, pick a level from beginner to expert to match your current knowledge.  Sorting options allow you to organise results by title, rating, number of students or duration for easier comparison.</p>
+        <!-- Accordion for additional AI insights -->
+        <details class="border rounded-lg p-4 shadow-sm group">
+          <summary class="font-semibold text-blue-800 cursor-pointer focus:outline-none flex justify-between items-center">
+            <span>What is AI and generative AI?</span>
+            <i class="fa fa-chevron-down text-gray-500"></i>
+          </summary>
+          <div class="mt-2 text-gray-700 text-sm space-y-2">
+            <p>AI refers to computer systems that can perform complex tasks such as recognizing speech, analysing data and making decisions.  Traditional AI, also called narrow AI, uses data, rules and logic to perform specific tasks; think of it as a smart assistant that follows instructions.  Generative AI is a subset of AI that creates new content—text, images or music—based on what it has learned.  It behaves like a creative partner, generating fresh ideas and solutions rather than simply following predefined rules.</p>
+            <p>In our courses you’ll explore both narrow AI and generative models.  You’ll learn how chatbots generate responses, how image synthesis works and how creative algorithms can help design products or compose music.  Understanding both traditional and generative AI will give you a well‑rounded foundation to build advanced systems.</p>
+          </div>
+        </details>
+        <!-- New accordion: Trends & future of AI -->
+        <details class="border rounded-lg p-4 shadow-sm group">
+          <summary class="font-semibold text-blue-800 cursor-pointer focus:outline-none flex justify-between items-center">
+            <span>Trends &amp; future of AI</span>
+            <i class="fa fa-chevron-down text-gray-500"></i>
+          </summary>
+          <div class="mt-2 text-gray-700 text-sm space-y-2">
+            <p>Artificial intelligence evolves quickly, so staying informed about emerging trends will help you choose relevant courses. Current directions include multimodal AI (combining text, images, audio and video), agentic AI (autonomous systems that act and make decisions), edge AI/AIoT (running models on devices rather than in the cloud), and generative AI for creating art, code and content.  Explainable AI seeks to make complex models more transparent and trustworthy, while sustainable AI focuses on energy‑efficient algorithms and hardware.  AIOps applies AI to improve IT operations and infrastructure, and quantum computing promises to accelerate AI by solving problems intractable for classical computers.  Understanding these trends will help you plan your learning journey and anticipate where the field is headed.</p>
+          </div>
+        </details>
+        <details class="border rounded-lg p-4 shadow-sm group">
+          <summary class="font-semibold text-blue-800 cursor-pointer focus:outline-none flex justify-between items-center">
+            <span>How to choose the right AI course</span>
+            <i class="fa fa-chevron-down text-gray-500"></i>
+          </summary>
+          <div class="mt-2 text-gray-700 text-sm space-y-2">
+            <p>Choosing the right course depends on your goals and experience.  If you’re new to programming, start with introductory courses that teach Python or other foundational languages and provide an overview of AI concepts.  Intermediate learners should focus on courses covering machine learning algorithms, mathematics and statistics, while advanced learners can delve into deep learning, reinforcement learning or quantum AI.</p>
+            <p>Consider the domain you want to work in—healthcare, finance, manufacturing, robotics or education—and pick courses tailored to those industries.  Also evaluate the learning format: self‑paced video courses are great for flexibility, while cohort‑based or live‑session courses offer interactive feedback and mentorship.  Look at course ratings, learner reviews and the expertise of the instructors (ours are often PhD‑qualified and industry experts).  Finally, ensure the course offers hands‑on projects or labs, as real‑world practice is essential for mastering AI skills.</p>
+          </div>
+        </details>
+        <details class="border rounded-lg p-4 shadow-sm group">
+          <summary class="font-semibold text-blue-800 cursor-pointer focus:outline-none flex justify-between items-center">
+            <span>What are the career prospects?</span>
+            <i class="fa fa-chevron-down text-gray-500"></i>
+          </summary>
+          <div class="mt-2 text-gray-700 text-sm space-y-2">
+            <p>AI and machine learning skills are in high demand across industries.  Career options include machine‑learning engineer, data scientist, AI consultant, AI product manager, AI ethics specialist and generative AI specialist.  Industries such as technology, healthcare, finance, retail and automotive are actively hiring professionals with AI expertise.  The rapid adoption of AI means opportunities will continue to expand.</p>
+            <p>In addition to high salaries, AI roles allow you to make meaningful contributions—improving patient care through predictive diagnostics, reducing fraud in banking, optimising supply chains and creating new user experiences.  Our course catalogue is designed to prepare you for these roles by teaching both foundational theory and applied skills.  By completing a series of courses, you can build a strong portfolio of projects that demonstrate your capabilities to employers.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Filter & Search -->
+    <section id="filterSection" class="mb-6">
+      <!-- Organise filters into two rows to improve alignment.  The first row
+           contains the search bar and multi‑select filters.  The second row
+           contains level, rating, duration and sort options.  Using
+           matching grid definitions ensures consistent widths per row. -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+        <!-- Search bar with suggestions. Wrap in a relative container so suggestions can be absolutely positioned -->
+        <div class="relative">
+          <input type="text" id="searchInput" placeholder="Search courses by title or keyword" class="w-full p-2 border rounded-md" autocomplete="off" />
+          <!-- Suggestions dropdown (hidden by default). It appears when user starts typing -->
+          <div id="suggestions" class="absolute z-10 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md w-full mt-1 hidden max-h-52 overflow-y-auto"></div>
+        </div>
+        <!-- Track filter: allow multi-select to refine by multiple tracks at once -->
+        <select id="trackFilter" class="w-full p-2 border rounded-md" multiple size="5">
+          <option value="">All Tracks</option>
+        </select>
+        <!-- Domain filter: allow multi-select -->
+        <select id="domainFilter" class="w-full p-2 border rounded-md" multiple size="5">
+          <option value="">All Domains</option>
+        </select>
+        <!-- Tool filter: allow multi-select -->
+        <select id="toolFilter" class="w-full p-2 border rounded-md" multiple size="5">
+          <option value="">All Tools</option>
+        </select>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+        <!-- Level filter: allow multi-select.  Increase size to 5 to match the height of other multi‑select filters. -->
+        <select id="levelFilter" class="w-full p-2 border rounded-md" multiple size="5">
+          <option value="">All Levels</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+          <option value="Expert">Expert</option>
+        </select>
+        <!-- Rating filter: select minimum rating threshold -->
+        <select id="ratingFilter" class="w-full p-2 border rounded-md">
+          <option value="0">All Ratings</option>
+          <option value="4">4.0 &amp; up</option>
+          <option value="4.5">4.5 &amp; up</option>
+          <option value="4.8">4.8 &amp; up</option>
+        </select>
+        <!-- Duration filter: group courses by their duration (in weeks) -->
+        <select id="durationFilter" class="w-full p-2 border rounded-md">
+          <option value="all">All Durations</option>
+          <option value="short">&lt; 4 weeks</option>
+          <option value="medium">4–8 weeks</option>
+          <option value="long">&gt; 8 weeks</option>
+        </select>
+        <!-- Sort options remain unchanged -->
+        <select id="sortBy" class="w-full p-2 border rounded-md">
+          <option value="title">Sort by Title (A–Z)</option>
+          <option value="rating">Sort by Rating</option>
+          <option value="students">Sort by Students</option>
+          <option value="duration">Sort by Duration</option>
+        </select>
+      </div>
+      <div class="flex justify-between items-center mb-4">
+        <div>
+          <button id="gridView" class="px-3 py-2 border rounded-md mr-2"><i class="fas fa-th-large"></i> Grid</button>
+          <button id="listView" class="px-3 py-2 border rounded-md"><i class="fas fa-list"></i> List</button>
+        </div>
+        <div id="resultsCount" class="text-sm text-gray-600"></div>
+      </div>
+      <!-- Active filters chips will appear here to show which filters are applied.  Each chip
+           includes the filter value and a small “×” icon to remove it.  This helps users
+           quickly understand and clear their current selections. -->
+      <div id="activeFilters" class="flex flex-wrap gap-2 mb-4"></div>
+    </section>
+    <!-- Use inline-grid to shrink the container to its content width; justify-center and mx-auto
+         ensure that when a row is not full, the remaining cards are centred instead of
+         hugging the left edge. -->
+    <section id="coursesContainer" class="grid inline-grid gap-4 justify-center mx-auto">
+      <p class="text-center text-gray-500">Loading courses…</p>
+    </section>
+    <!-- Pagination Controls -->
+    <div id="paginationControls" class="flex justify-center items-center space-x-2 mt-6"></div>
+    
+  </main>
+  <!-- Global footer with multiple columns and dynamic year -->
+  <footer class="bg-blue-900 dark:bg-gray-900 text-white mt-16">
+    <div class="container mx-auto px-4 py-10 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+      <div>
+        <h4 class="font-bold text-lg mb-2">NanoSchool</h4>
+        <p class="text-sm">Leading AI, quantum and deep science education since 2008.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Quick Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="https://nanoschool.in/ai/courses/" class="hover:underline">Home</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/listing" class="hover:underline">Courses</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/track" class="hover:underline">Tracks</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/domain" class="hover:underline">Domains</a></li>
+          <li><a href="home.html#deepDive" class="hover:underline">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Contact</h4>
+        <p class="text-sm">123 Science Avenue<br>Gurugram, Haryana, India</p>
+        <p class="text-sm mt-2">Email: <a href="mailto:contact@nanoschool.in" class="underline">contact@nanoschool.in</a></p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Follow Us</h4>
+        <div class="flex space-x-4 text-xl">
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-blue-800 dark:border-gray-800 mt-6">
+      <p class="text-center text-sm py-4">&copy; <span id="footerYear"></span> NanoSchool. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script to set dynamic current year in footer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearSpan = document.getElementById('footerYear');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+
+  <!-- Navigation script for mobile menu toggle -->
+  <script defer src="https://nanoschool.in/courses-data/new/js/navigation.js"></script>
+
+  <style>
+    /* Dark mode style overrides */
+    html.dark body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+    }
+    html.dark .bg-white {
+      background-color: #1e293b;
+    }
+    html.dark .bg-gray-50 {
+      background-color: #0f172a;
+    }
+    html.dark .text-gray-800 {
+      color: #f1f5f9;
+    }
+    html.dark .text-gray-700 {
+      color: #cbd5e1;
+    }
+    html.dark .text-gray-600 {
+      color: #94a3b8;
+    }
+    html.dark header {
+      background-color: #1e293b;
+    }
+    html.dark footer {
+      background-color: #1e293b;
+    }
+    html.dark .border {
+      border-color: #374151;
+    }
+    html.dark #toc {
+      background-color: #1e293b;
+      color: #cbd5e1;
+    }
+    html.dark .hover\:bg-blue-50:hover {
+      background-color: #334155;
+    }
+    html.dark .bg-blue-900 {
+      background-color: #1e3a8a;
+    }
+    html.dark .text-blue-900 {
+      color: #60a5fa;
+    }
+
+    /* Accordion icon rotation for listing page */
+    details summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    details summary .fa-chevron-down {
+      transition: transform 0.3s ease;
+    }
+    details[open] summary .fa-chevron-down {
+      transform: rotate(180deg);
+    }
+  </style>
+  <!-- Scroll to top button (hidden by default).  Appears when the user scrolls beyond a
+       threshold and scrolls the page back to the top on click.  Placed near the end
+       of the body to avoid interfering with content. -->
+  <button id="scrollTopBtn" class="hidden fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-md transition z-50" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</body>
+</html>

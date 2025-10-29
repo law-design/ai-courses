@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Overview | NanoSchool</title>
+  <meta name="description" content="Explore courses by track at NanoSchool. Discover domains and tools within each track and find courses to suit your goals." />
+  <!-- Add a data-base attribute so the dynamic JS can append track keywords without overwriting the base list -->
+  <meta name="keywords" data-base="NanoSchool tracks, AI track, Machine Learning track, Quantum AI track, Data Science track" content="NanoSchool tracks, AI track, Machine Learning track, Quantum AI track, Data Science track" />
+  <link rel="canonical" href="https://nanoschool.in/ai/courses/track" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Track Overview | NanoSchool" />
+  <meta property="og:description" content="Browse courses by track at NanoSchool and NSTC. Learn about the domains and tools within each track." />
+  <meta property="og:url" content="https://nanoschool.in/ai/courses/track" />
+  <meta property="og:image" content="https://nanoschool.in/images/ai-courses-og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Track Overview | NanoSchool" />
+  <meta name="twitter:description" content="Discover AI and science tracks at NanoSchool and find courses within each track." />
+  <meta name="twitter:image" content="https://nanoschool.in/images/ai-courses-og.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NanoSchool AI",
+    "url": "https://nanoschool.in/ai/courses/track"
+  }
+  </script>
+
+  <!-- Structured data to improve search engine understanding of this page. A breadcrumb trail
+       helps crawlers understand the site hierarchy, and FAQ data corresponds to the accordions
+       in the About Track section. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://nanoschool.in/ai/courses/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tracks",
+        "item": "https://nanoschool.in/ai/courses/track"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is this track?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each track is a curated learning path that organises courses around a specific AI domain. It starts with foundations and builds toward advanced topics, covering both traditional and generative AI concepts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What skills and applications will I learn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You’ll gain programming, mathematics and problem‑solving skills. The track explores real‑world applications like digital assistants, healthcare diagnostics, fraud detection and recommendation systems across multiple industries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What career pathways and industries are relevant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graduates can become machine‑learning engineers, data scientists, AI consultants, product managers, generative AI specialists or researchers. Employers span technology, healthcare, finance, retail, automotive and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I succeed in this track?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Focus on both theory and practice: master Python, mathematics and algorithms; study topics like neural networks and NLP; work on real datasets and projects; and stay current with research and industry trends."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the trends and future directions in AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Important trends include multimodal AI, agentic AI, edge computing for AI, generative models, explainable AI, sustainable AI and AI for operations. These shape future career opportunities and research."
+        }
+      }
+    ]
+  }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-........." crossorigin="anonymous" />
+  <!-- Custom palette overrides -->
+  <link rel="stylesheet" href="css/custom.css" />
+  <script defer src="https://nanoschool.in/courses-data/new/data/courses.js"></script>
+  <script defer src="https://nanoschool.in/courses-data/new/js/track.js"></script>
+  <script defer src="https://nanoschool.in/courses-data/new/js/theme.js"></script>
+  <!-- Scroll to top functionality -->
+  <script defer src="https://nanoschool.in/courses-data/new/js/scroll.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Global navigation bar -->
+  <nav class="bg-white dark:bg-gray-900 shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="https://nanoschool.in/ai/courses/" class="text-2xl font-bold text-blue-600 dark:text-blue-300">NanoSchool</a>
+      <button id="navToggle" class="md:hidden text-gray-700 dark:text-gray-200 focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="navMenu" class="hidden md:flex space-x-6 items-center">
+        <a href="https://nanoschool.in/ai/courses/" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Home</a>
+        <a href="https://nanoschool.in/ai/courses/listing" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Courses</a>
+        <a href="https://nanoschool.in/ai/courses/track" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Tracks</a>
+        <a href="https://nanoschool.in/ai/courses/domain" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Domains</a>
+        <a href="https://nanoschool.in/ai" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">About</a>
+        <button aria-label="Toggle dark mode" class="theme-toggle text-gray-700 dark:text-gray-200 text-xl">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 px-4 pb-4 space-y-3">
+      <a href="https://nanoschool.in/ai/courses/" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Home</a>
+      <a href="https://nanoschool.in/ai/courses/listing" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Courses</a>
+      <a href="https://nanoschool.in/ai/courses/track" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Tracks</a>
+      <a href="https://nanoschool.in/ai/courses/domain" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">Domains</a>
+      <a href="https://nanoschool.in/ai" class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-300">About</a>
+      <button aria-label="Toggle dark mode" class="theme-toggle flex items-center text-gray-700 dark:text-gray-200">
+        <i class="fas fa-moon mr-2"></i> <span>Toggle Theme</span>
+      </button>
+    </div>
+  </nav>
+  <!-- Spacer to offset fixed nav height -->
+  <div class="h-16"></div>
+  <!-- Table of contents for track page -->
+  <aside id="toc" class="hidden md:block fixed top-32 right-4 w-56 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border dark:border-gray-700 rounded-lg p-4 shadow-md z-20">
+    <h3 class="font-semibold mb-3 text-blue-900 dark:text-blue-200">On this page</h3>
+    <ul class="space-y-2 text-sm">
+      <li><a href="#aboutTrack" class="hover:underline">About Track</a></li>
+      <li><a href="#courseTypesSection" class="hover:underline">Course Types</a></li>
+      <li><a href="#domainSection" class="hover:underline">Domains</a></li>
+      <li><a href="#coursesSection" class="hover:underline">Courses</a></li>
+    </ul>
+  </aside>
+  <!-- Hero header with gradient and dark mode toggle -->
+  <header class="relative overflow-hidden text-white py-12 flex justify-between items-center px-4" style="background: linear-gradient(to right, var(--brand-primary), var(--brand-accent));">
+    <div>
+      <h1 id="trackName" class="text-4xl md:text-5xl font-bold mb-2">Track</h1>
+      <p id="trackDescription" class="text-md md:text-lg opacity-90 max-w-xl"></p>
+    </div>
+    <!-- Dark mode toggle moved to global navigation; placeholder retained for layout -->
+    <div></div>
+    <!-- decorative shapes like moodle themes -->
+    <div class="absolute inset-0">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <style>
+      .blob { position:absolute; border-radius:50%; filter:blur(80px); opacity:0.4; }
+      /* New colour scheme for decorative blobs */
+      .blob-1 { width:320px; height:320px; background:radial-gradient(circle, rgba(0,71,171,0.4), transparent 70%); top:-80px; left:-80px; animation:drift 25s infinite ease-in-out; }
+      .blob-2 { width:280px; height:280px; background:radial-gradient(circle, rgba(106,90,205,0.4), transparent 70%); bottom:-60px; right:-60px; animation:pulse 22s infinite alternate; }
+      @keyframes drift { 0%,100% { transform:translate(0,0); } 50% { transform:translate(20px,15px); } }
+      @keyframes pulse { 0% { transform:scale(1); opacity:0.3; } 100% { transform:scale(1.1); opacity:0.6; } }
+    </style>
+  </header>
+  <!--
+    When the TOC is visible on larger screens it takes up 14rem on the
+    right side. Add a right margin on medium and larger breakpoints
+    (md:mr-64) so that the track introduction, domains and courses sections
+    do not collide with the floating sidebar. The additional space ensures
+    a clear separation and improves readability.
+  -->
+  <main class="container mx-auto px-4 py-6 space-y-8 md:mr-64">
+    <!-- About Track Section -->
+    <section id="aboutTrack" class="space-y-6">
+      <h2 class="text-2xl font-semibold mb-2">About This Track</h2>
+      <p class="text-gray-700 text-sm">Each NanoSchool track represents a curated journey through a specialised area of artificial intelligence and deep science. Whether the focus is machine learning, quantum computing, data science, robotics or natural language processing, this track bundles courses that build from foundational concepts to advanced applications. Our goal is to help you master core skills, explore real‑world use cases and prepare for rewarding careers. The sections below provide a deeper dive into what the track covers, the skills you’ll gain, the career paths that await and the trends shaping the future of this field.</p>
+      <div class="space-y-4">
+        <!-- What is this track accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>What is this track?</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>Tracks are designed to organise learning around a specific domain so you can develop expertise in a coherent sequence. In this track, you’ll explore how artificial intelligence uses algorithms and data to perform tasks that typically require human intelligence. The curriculum begins with foundational topics such as programming, statistics and linear algebra before introducing machine learning paradigms like supervised, unsupervised and reinforcement learning. Along the way, you’ll encounter the difference between traditional AI that analyses and classifies existing data and <strong>generative AI</strong> that can create new text, images or code by learning patterns from vast datasets. By the end of the track you’ll appreciate how AI systems are built, how they learn and how they’re deployed in production.</p>
+          </div>
+        </details>
+        <!-- Key skills and applications accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>Key skills &amp; applications</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>The track equips you with a strong foundation in programming (typically Python), data structures, linear algebra, probability and statistics. You’ll learn how to build and evaluate predictive models, optimise algorithms and work with large datasets. Beyond coding and mathematics, the curriculum emphasises problem‑solving, critical thinking and domain knowledge. For example, AI has become ubiquitous in everyday life: digital assistants like voice‑activated speakers, chatbots that handle customer service queries, search engines that deliver personalised results, writing tools that suggest content and grammar corrections, and smart devices that automate our homes. You’ll also explore applications in healthcare (diagnostic imaging and patient risk predictions), finance (fraud detection and algorithmic trading), retail (recommendation engines and demand forecasting) and travel (routing and price optimisation). Understanding these diverse use cases will help you contextualise your learning.</p>
+          </div>
+        </details>
+        <!-- Career pathways and industries accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>Career pathways &amp; industries</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>Completing this track opens doors to a wide range of roles. Common titles include machine‑learning engineer, data scientist, business intelligence developer, AI consultant, AI product manager, generative AI specialist and AI ethics specialist. You may also pursue roles like research scientist or AI software architect if you enjoy pushing the boundaries of the field. Employers span virtually every industry: technology companies, healthcare providers, financial institutions, retailers, automotive manufacturers and energy firms. Because AI‑driven transformation touches all sectors, your skills will remain in demand as organisations seek to automate processes, glean insights from data and innovate new services. Salaries are competitive and often above the median for technology jobs, reflecting the specialised expertise required.</p>
+          </div>
+        </details>
+        <!-- How to succeed in this track accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>How to succeed in this track</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>Success in AI requires both theoretical understanding and practical experience. Begin by mastering a programming language (usually Python) and strengthening your grasp of mathematics (especially calculus and linear algebra). Study key algorithms and data structures and explore AI concepts like neural networks, natural language processing, computer vision and reinforcement learning. Work with real datasets to develop data wrangling skills and learn how to preprocess, visualise and model data. Stay current by reading research papers, blogs and attending seminars on topics such as multimodal AI, agentic AI, edge AI/AIoT and explainable AI. Participate in online communities, contribute to open‑source projects, build portfolios of personal projects and pursue internships or research opportunities. Enrolling in courses, earning certificates and seeking mentorship through NanoSchool will provide structure and feedback as you progress.</p>
+          </div>
+        </details>
+        <!-- Trends & future directions accordion -->
+        <details class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <summary class="font-semibold text-blue-700 dark:text-blue-300 cursor-pointer flex justify-between items-center">
+            <span>Trends &amp; future directions</span>
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div class="mt-2 text-gray-600 dark:text-gray-400 space-y-3">
+            <p>The AI landscape is dynamic, so staying abreast of emerging trends is essential. One key theme is <em>multimodal AI</em>, where models learn from multiple data modalities (text, images, audio and video) to deliver richer outputs. Another is <em>agentic AI</em>, which emphasises autonomous systems capable of making decisions and acting with minimal human intervention. <em>Edge AI</em> and the integration of AI into the Internet of Things bring computation closer to devices, enabling real‑time responses and reducing energy consumption. <em>Generative AI</em> continues to evolve, powering chatbots, image synthesis and content generation, while <em>explainable AI</em> addresses transparency and trust by making models’ decisions more interpretable. Sustainability is an emerging focus; researchers are exploring energy‑efficient algorithms and hardware, and <em>AIOps</em> applies AI to optimise IT operations. Understanding these trends will help you future‑proof your career and identify research or business opportunities.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+    <!-- Course Types / Learning Paths -->
+    <section id="courseTypesSection" class="space-y-4">
+      <h2 class="text-2xl font-semibold mb-2">Learning Paths in this Track</h2>
+      <p class="text-gray-600 text-sm mb-4">Choose the learning path that suits your style – inspired by Moodle’s flexible course formats. Use the tabs below to explore each format.</p>
+      <!-- Tabs navigation -->
+      <nav id="learningTabs" class="flex flex-wrap md:flex-nowrap border-b">
+        <button data-tab="flow" class="tab-btn px-3 py-2 font-semibold text-blue-700 border-b-2 border-blue-700 focus:outline-none">Flow</button>
+        <button data-tab="kanban" class="tab-btn px-3 py-2 text-gray-600 hover:text-blue-700 border-b-2 border-transparent focus:outline-none">Kanban</button>
+        <button data-tab="normal" class="tab-btn px-3 py-2 text-gray-600 hover:text-blue-700 border-b-2 border-transparent focus:outline-none">Normal</button>
+        <button data-tab="collapsible" class="tab-btn px-3 py-2 text-gray-600 hover:text-blue-700 border-b-2 border-transparent focus:outline-none">Collapsible</button>
+      </nav>
+      <!-- Tabs content -->
+      <div id="tabFlow" class="tab-content p-4 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-b-lg">
+        <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Flow</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Ideal for concise courses; organizes activities into visually appealing tiles. Tiles can be configured in small, medium, or large sizes.</p>
+      </div>
+      <div id="tabKanban" class="hidden tab-content p-4 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-b-lg">
+        <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Kanban</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Perfect for project‑based courses; uses a Kanban board to track progress through stages visually.</p>
+      </div>
+      <div id="tabNormal" class="hidden tab-content p-4 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-b-lg">
+        <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Normal</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Offers maximum flexibility; customize the appearance of sections fully to match any teaching strategy.</p>
+      </div>
+      <div id="tabCollapsible" class="hidden tab-content p-4 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-b-lg">
+        <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Collapsible</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Adds the ability for students to expand or collapse sections – ideal for courses with extensive content.</p>
+      </div>
+    </section>
+    <!-- Domains -->
+    <section id="domainSection">
+      <h2 class="text-2xl font-semibold mb-2">Domains in this Track</h2>
+      <!-- Centre the domains grid horizontally using mx-auto so partial rows are centred -->
+      <!-- Use inline-grid to ensure domains grid shrinks to its content width and centres rows. -->
+      <div id="domainList" class="grid inline-grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center mx-auto">
+        <p class="text-center text-gray-500">Loading domains…</p>
+      </div>
+    </section>
+    <!-- Top Courses -->
+    <section id="coursesSection">
+      <h2 class="text-2xl font-semibold mb-2">Courses in this Track</h2>
+      <!-- Centre the courses grid horizontally using mx-auto for better balance -->
+      <!-- Use inline-grid to centre the courses grid horizontally when there are few items. -->
+      <div id="courseList" class="grid inline-grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center mx-auto">
+        <p class="text-center text-gray-500">Loading courses…</p>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-blue-900 dark:bg-gray-900 text-white mt-16">
+    <div class="container mx-auto px-4 py-10 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+      <div>
+        <h4 class="font-bold text-lg mb-2">NanoSchool</h4>
+        <p class="text-sm">Leading AI, quantum and deep science education since 2008.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Quick Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="https://nanoschool.in/ai/courses/" class="hover:underline">Home</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/listing" class="hover:underline">Courses</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/track" class="hover:underline">Tracks</a></li>
+          <li><a href="https://nanoschool.in/ai/courses/domain" class="hover:underline">Domains</a></li>
+          <li><a href="https://nanoschool.in/ai" class="hover:underline">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Contact</h4>
+        <p class="text-sm">123 Science Avenue<br>Gurugram, Haryana, India</p>
+        <p class="text-sm mt-2">Email: <a href="mailto:contact@nanoschool.in" class="underline">contact@nanoschool.in</a></p>
+      </div>
+      <div>
+        <h4 class="font-bold text-lg mb-2">Follow Us</h4>
+        <div class="flex space-x-4 text-xl">
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-blue-800 dark:border-gray-800 mt-6">
+      <p class="text-center text-sm py-4">&copy; <span id="footerYear"></span> NanoSchool. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearSpan = document.getElementById('footerYear');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+
+  <style>
+    /* Dark mode overrides */
+    html.dark body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+    }
+    html.dark .bg-white {
+      background-color: #1e293b;
+    }
+    html.dark .bg-gray-50 {
+      background-color: #0f172a;
+    }
+    html.dark .text-gray-800 {
+      color: #f1f5f9;
+    }
+    html.dark .text-gray-700 {
+      color: #cbd5e1;
+    }
+    html.dark .text-gray-600 {
+      color: #94a3b8;
+    }
+    html.dark header {
+      background-color: #1e293b;
+    }
+    html.dark footer {
+      background-color: #1e293b;
+    }
+    html.dark .border {
+      border-color: #374151;
+    }
+    html.dark #toc {
+      background-color: #1e293b;
+      color: #cbd5e1;
+    }
+    html.dark .hover\:bg-blue-50:hover {
+      background-color: #334155;
+    }
+    html.dark .bg-blue-900 {
+      background-color: #1e3a8a;
+    }
+    html.dark .text-blue-900 {
+      color: #60a5fa;
+    }
+
+    /* Accordion icon rotation */
+    details summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    details summary .fa-chevron-down {
+      transition: transform 0.3s ease;
+    }
+    details[open] summary .fa-chevron-down {
+      transform: rotate(180deg);
+    }
+  </style>
+  <!-- Scroll to top button (hidden by default).  Placed near the bottom of the body so
+       it doesn't interfere with the page layout.  Appears on scroll and allows users
+       to return to the top of the page smoothly. -->
+  <button id="scrollTopBtn" class="hidden fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-md transition z-50" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <!-- Include responsive navigation JS -->
+  <script defer src="https://nanoschool.in/courses-data/new/js/navigation.js"></script>
+</body>
+</html>
